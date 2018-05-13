@@ -1,0 +1,23 @@
+---
+title: "Rmarkdown.demo"
+author: "qxs"
+date: "August 26, 2017"
+output:
+  word_document: default
+  html_document: default
+---
+
+#This is my first **Rmarkdown**
+
+```{r}
+library(datasets)
+data(iris)
+summary(iris)
+hist(iris$Sepal.Length)
+```
+# Now I have another plot
+```{r}
+plot(iris)
+```
+
+superscript^2^

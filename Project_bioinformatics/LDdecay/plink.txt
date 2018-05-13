@@ -1,0 +1,74 @@
+------------------LD require phased data
+vcftools  --vcf all56.flt.DP10.MQ30.snps.vcf --ldhat --out phased --chr 1
+vcftools  --vcf all56.flt.DP10.MQ30.snps.vcf --geno-r2 --ld-window-bp 100000 --min-r2 0.5 -out LD 
+
+#Linkage disequilibruim Decay 
+#from the 60k snp, choose those with maf>0.05 6094 SNP  from "all56.flt.DP10.MQ30.snps.DP4.vcf"
+
+
+vcftools --vcf  all56b.bed.vcf2.vcf --out 6OUT.plink --plink --indv 151.accepted_hits.bam --indv 83.accepted_hits.bam --indv 134.accepted_hits.bam  --indv 150.accepted_hits.bam  --indv 153.accepted_hits.bam --indv 154.accepted_hits.bam --maf 0.05
+
+vcftools --vcf all56b.bed.vcf2.vcf --out 11ch.plink --plink --indv 80.accepted_hits.bam --indv 108.accepted_hits.bam --indv 122.accepted_hits.bam --indv 68.accepted_hits.bam  --indv 77.accepted_hits.bam --indv 81.accepted_hits.bam --indv 69.accepted_hits.bam --indv 67.accepted_hits.bam  --indv 99.accepted_hits.bam  --indv 75.accepted_hits.bam --indv 76.accepted_hits.bam --maf 0.05
+
+vcftools --vcf all56b.bed.vcf2.vcf --out 10pk.plink --plink  --indv 71.accepted_hits.bam --indv 121.accepted_hits.bam --indv 123.accepted_hits.bam --indv 82.accepted_hits.bam  --indv 12.accepted_hits.bam --indv 103.accepted_hits.bam --indv 116.accepted_hits.bam --indv 10.accepted_hits.bam  --indv 106.accepted_hits.bam  --indv 107.accepted_hits.bam --maf 0.05
+
+vcftools --vcf all56b.bed.vcf2.vcf --out 27all.plink --plink --indv 151.accepted_hits.bam --indv 83.accepted_hits.bam --indv 134.accepted_hits.bam  --indv 150.accepted_hits.bam  --indv 153.accepted_hits.bam --indv 154.accepted_hits.bam --indv 80.accepted_hits.bam --indv 108.accepted_hits.bam --indv 122.accepted_hits.bam --indv 68.accepted_hits.bam  --indv 77.accepted_hits.bam --indv 81.accepted_hits.bam --indv 69.accepted_hits.bam --indv 67.accepted_hits.bam  --indv 99.accepted_hits.bam  --indv 75.accepted_hits.bam --indv 76.accepted_hits.bam --indv 71.accepted_hits.bam --indv 121.accepted_hits.bam --indv 123.accepted_hits.bam --indv 82.accepted_hits.bam  --indv 12.accepted_hits.bam --indv 103.accepted_hits.bam --indv 116.accepted_hits.bam --indv 10.accepted_hits.bam  --indv 106.accepted_hits.bam  --indv 107.accepted_hits.bam --maf 0.05
+
+plink --file 27all.plink --r2 --ld-window-r2 0 --ld-window-kb 1000 --ld-window 1000 --out 27
+grep -E "^.*A01.*A01.*" 27.ld >27.ld.A01
+grep -E "^.*A02.*A02.*" 27.ld >27.ld.A02
+grep -E "^.*A03.*A03.*" 27.ld >27.ld.A03
+grep -E "^.*A04.*A04.*" 27.ld >27.ld.A04
+grep -E "^.*A05.*A05.*" 27.ld >27.ld.A05
+grep -E "^.*A06.*A06.*" 27.ld >27.ld.A06
+grep -E "^.*A07.*A07.*" 27.ld >27.ld.A07
+grep -E "^.*A08.*A08.*" 27.ld >27.ld.A08
+grep -E "^.*A09.*A09.*" 27.ld >27.ld.A09
+grep -E "^.*A10.*A10.*" 27.ld >27.ld.A10
+cat 27.ld.A*>27.ld.10chr
+rm 27.ld
+
+plink --file 11ch.plink --r2 --ld-window-r2 0 --ld-window-kb 1000 --ld-window 1000 --out 11
+grep -E "^.*A01.*A01.*" 11.ld >11.ld.A01
+grep -E "^.*A02.*A02.*" 11.ld >11.ld.A02
+grep -E "^.*A03.*A03.*" 11.ld >11.ld.A03
+grep -E "^.*A04.*A04.*" 11.ld >11.ld.A04
+grep -E "^.*A05.*A05.*" 11.ld >11.ld.A05
+grep -E "^.*A06.*A06.*" 11.ld >11.ld.A06
+grep -E "^.*A07.*A07.*" 11.ld >11.ld.A07
+grep -E "^.*A08.*A08.*" 11.ld >11.ld.A08
+grep -E "^.*A09.*A09.*" 11.ld >11.ld.A09
+grep -E "^.*A10.*A10.*" 11.ld >11.ld.A10
+cat 11.ld.A*>11.ld.10chr
+rm 11.ld
+
+plink --file 10pk.plink --r2 --ld-window-r2 0 --ld-window-kb 1000 --ld-window 1000 --out 10
+grep -E "^.*A01.*A01.*" 10.ld >10.ld.A01
+grep -E "^.*A02.*A02.*" 10.ld >10.ld.A02
+grep -E "^.*A03.*A03.*" 10.ld >10.ld.A03
+grep -E "^.*A04.*A04.*" 10.ld >10.ld.A04
+grep -E "^.*A05.*A05.*" 10.ld >10.ld.A05
+grep -E "^.*A06.*A06.*" 10.ld >10.ld.A06
+grep -E "^.*A07.*A07.*" 10.ld >10.ld.A07
+grep -E "^.*A08.*A08.*" 10.ld >10.ld.A08
+grep -E "^.*A09.*A09.*" 10.ld >10.ld.A09
+grep -E "^.*A10.*A10.*" 10.ld >10.ld.A10
+cat 10.ld.A*>10.ld.10chr
+rm 10.ld
+
+plink --file 6OUT.plink --r2 --ld-window-r2 0 --ld-window-kb 1000 --ld-window 1000 --out 6
+grep -E "^.*A01.*A01.*" 6.ld >6.ld.A01
+grep -E "^.*A02.*A02.*" 6.ld >6.ld.A02
+grep -E "^.*A03.*A03.*" 6.ld >6.ld.A03
+grep -E "^.*A04.*A04.*" 6.ld >6.ld.A04
+grep -E "^.*A05.*A05.*" 6.ld >6.ld.A05
+grep -E "^.*A06.*A06.*" 6.ld >6.ld.A06
+grep -E "^.*A07.*A07.*" 6.ld >6.ld.A07
+grep -E "^.*A08.*A08.*" 6.ld >6.ld.A08
+grep -E "^.*A09.*A09.*" 6.ld >6.ld.A09
+grep -E "^.*A10.*A10.*" 6.ld >6.ld.A10
+cat 6.ld.A*>6.ld.10chr
+rm 6.ld
+
+#then use my R script to make plot"" LD dacay.qxs.R"
+ 

@@ -1,0 +1,438 @@
+---
+title: "Asymmetric_KaKs"
+author: "qxs"
+date: "August 27, 2017"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# This script is used to analysis substitution rate difference between paleolog and non-paleolog in *Brassica rapa*
+#### This script is a summary of all information
+#### Aug 2017 by Xinshuai Qi
+#### 
+
+
+# 1) Define the function to merge all the information into one table for each group
+#### This function will load all the input files and merge them into one table, included input files are:
+#### mikeKaKs="brassica_codemloutput/codeml_outputchc_ath.txt"
+#### hit="chc" # mike's term, need to be replaced
+#### mikeindex="index/indices.PC106-127.scafSeq"
+#### blast="blast_Brapa/PC106-127.blast.out"
+```{r eval=FALSE}
+getwd()
+setwd("C:/Users/qxs/Desktop")
+library(dplyr)
+library(plyr)
+library(grid)
+library(ggplot2)
+# #TN
+# mikeKaKs="brassica_codemloutput/codeml_outputtrn_Ath.txt"
+# hit="trn" # mike's term, need to be replaced
+# mikeindex="index/indices.TN28-127.scafSeq"
+# blast="blast_Brapa/TN28-127.blast.out"
+# 
+# #PC
+# mikeKaKs="brassica_codemloutput/codeml_outputchc_ath.txt"
+# hit="chc" # mike's term, need to be replaced
+# mikeindex="index/indices.PC106-127.scafSeq"
+# blast="blast_Brapa/PC106-127.blast.out"
+
+
+
+###############################################
+# define the function
+# this function will load all the input files, including files such as:
+# mikeKaKs="brassica_codemloutput/codeml_outputchc_ath.txt"
+# hit="chc" # mike's term, need to be replaced
+# mikeindex="index/indices.PC106-127.scafSeq"
+# blast="blast_Brapa/PC106-127.blast.out"
+
+eachgroup<-function(mikeKaKs,hit,mikeindex,blast){
+  
+# read Mike's data
+TN.Ath<-read.table(mikeKaKs,sep="\t",header=T) 
+colnames(TN.Ath)<-c("Queryath","Hit","Kaathvshit","Ksathvs","Ka.Ksathvshit")
+# replace
+TN.Ath$Hit<-gsub(hit,'',TN.Ath$Hit)   #you may need to replace this line
+# only keep useful info
+TN.Ath<-TN.Ath[,1:5]
+head(TN.Ath)
+
+
+
+#read Mike's gene code
+TN.code<-read.table(mikeindex,sep="\t",header=F) 
+colnames(TN.code)<-c("code","scaf")
+head(TN.code)
+# TN.code$V2<-gsub('>','',TN.code$V2) 
+# TN.code$V2<-gsub(' ','  ',TN.code$V2) 
+# #split V2
+# library(stringr)
+# TN.code$V2<-str_split_fixed(TN.code$V2, "  ", 4)
+# ncol(TN.code)
+# TN.code<-subset(TN.code, select=c("V1","V2.1"))
+
+
+
+# read blast out
+TN.blast<-read.table(blast,sep="\t",header=F) 
+TN.blast$V2<-gsub('.*(Bra\\d*)\\|.*', '\\1',TN.blast$V2) 
+TN.blast<-TN.blast[,c(1:2)]
+colnames(TN.blast)<-c('scaf','Bra')
+#each scaffold seq may has multiple match in the B. rapa genome.
+# so I will only keep the first matches.
+TN.blast<-TN.blast[!duplicated(TN.blast$scaf),]
+head(TN.blast)
+
+
+#paleolog annotation
+paleolog<-read.table("paleolog.txt")
+colnames(paleolog)<-c("Bra","paleolog")
+head(paleolog)
+
+
+
+#merge all data into one
+All<-merge(TN.code,TN.Ath,by.x="code",by.y = "Hit",all.y=F)
+All<-merge(All,TN.blast,by.x="scaf",by.y = "scaf",all.y=FALSE,all.x=FALSE)
+All<-merge(All,paleolog,by.x="Bra",by.y = "Bra",all.y=FALSE,all.x=FALSE)
+head(All)
+
+All<-unique(All)
+return(All)
+}
+###############################################
+```
+
+# 2) Using the defined function generate a merged table for each tested group.
+```{r eval=FALSE}
+##### vs Ath
+#TN
+Ath_TN<-eachgroup( "brassica_codemloutput/codeml_outputtrn_ath.txt","trn",
+                  "index/indices.TN28-127.scafSeq","blast_Brapa/TN28-127.blast.out");head(Ath_TN)
+#PC pak choi
+Ath_PC<-eachgroup( "brassica_codemloutput/codeml_outputpak_ath.txt","pak",    
+                   "index/indices.PC106-127.scafSeq","blast_Brapa/PC106-127.blast.out");head(Ath_PC)
+
+#CC
+Ath_CC<-eachgroup( "brassica_codemloutput/codeml_outputchc_ath.txt","chc",    
+                   "index/indices.CC68-127.scafSeq","blast_Brapa/CC68-127.blast.out");head(Ath_PC)
+
+#IS sarson
+Ath_IS<-eachgroup( "brassica_codemloutput/codeml_outputsar_ath.txt","sar",    
+                   "index/indices.IS136-127.scafSeq","blast_Brapa/IS136-127.blast.out");head(Ath_PC)
+
+#RP rapini
+Ath_RP<-eachgroup( "brassica_codemloutput/codeml_outputrap_ath.txt","rap",    
+                   "index/indices.RP153-127.scafSeq","blast_Brapa/RP153-127.blast.out");head(Ath_PC)
+
+
+
+
+##### vs Aar
+#TN
+Aar_TN<-eachgroup( "brassica_codemloutput/codeml_outputtrn_aar.txt","trn",
+                   "index/indices.TN28-127.scafSeq","blast_Brapa/TN28-127.blast.out");head(Aar_TN)
+#PC pak choi
+Aar_PC<-eachgroup( "brassica_codemloutput/codeml_outputpak_aar.txt","pak",    
+                   "index/indices.PC106-127.scafSeq","blast_Brapa/PC106-127.blast.out");head(Aar_PC)
+
+#CC
+Aar_CC<-eachgroup( "brassica_codemloutput/codeml_outputchc_aar.txt","chc",    
+                   "index/indices.CC68-127.scafSeq","blast_Brapa/CC68-127.blast.out");head(Aar_PC)
+
+#IS sarson
+Aar_IS<-eachgroup( "brassica_codemloutput/codeml_outputsar_aar.txt","sar",    
+                   "index/indices.IS136-127.scafSeq","blast_Brapa/IS136-127.blast.out");head(Aar_PC)
+
+#RP rapini
+Aar_RP<-eachgroup( "brassica_codemloutput/codeml_outputrap_aar.txt","rap",    
+                   "index/indices.RP153-127.scafSeq","blast_Brapa/RP153-127.blast.out");head(Aar_PC)
+
+save(Ath_TN, file="C:/Users/qxs/Desktop/RData/Ath_TN.RData")
+save(Ath_RP, file="C:/Users/qxs/Desktop/RData/Ath_RP.RData")
+save(Ath_IS, file="C:/Users/qxs/Desktop/RData/Ath_IS.RData")
+save(Ath_PC, file="C:/Users/qxs/Desktop/RData/Ath_PC.RData")
+save(Ath_CC, file="C:/Users/qxs/Desktop/RData/Ath_CC.RData")
+
+save(Aar_TN, file="C:/Users/qxs/Desktop/RData/Aar_TN.RData")
+save(Aar_RP, file="C:/Users/qxs/Desktop/RData/Aar_RP.RData")
+save(Aar_IS, file="C:/Users/qxs/Desktop/RData/Aar_IS.RData")
+save(Aar_PC, file="C:/Users/qxs/Desktop/RData/Aar_PC.RData")
+save(Aar_CC, file="C:/Users/qxs/Desktop/RData/Aar_CC.RData")
+
+
+```
+
+# The head of each table are like this:
+```{r}
+load(file="C:/Users/qxs/Desktop/RData/Ath_TN.RData")
+head(Ath_TN)
+
+```
+ 
+ 
+
+# 3) Compare the mean(Ka/Ks) value between paleolog and non-paleolog in each *Brassica rapa* groups
+```{r}
+library(plyr)
+library(ggplot2)
+load(file="C:/Users/qxs/Desktop/RData/Ath_TN.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_RP.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_IS.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_PC.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_CC.RData")
+
+load(file="C:/Users/qxs/Desktop/RData/Aar_TN.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_RP.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_IS.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_PC.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_CC.RData")
+
+mu <- ddply(Ath_TN, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+mu <- ddply(Ath_RP, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu 
+mu <- ddply(Ath_IS, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu 
+mu <- ddply(Ath_PC, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+mu <- ddply(Ath_CC, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+
+mu <- ddply(Aar_TN, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_RP, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_IS, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_PC, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_CC, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) ;mu
+```
+
+# 4) Generate plot for each *B. rapa* groups
+```{r fig11, fig.height = 10, fig.width = 10,fig.align = "center"}
+##########  Now I have table for each dataset
+library(ggplot2)
+load(file="C:/Users/qxs/Desktop/RData/Ath_TN.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_RP.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_IS.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_PC.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_CC.RData")
+
+load(file="C:/Users/qxs/Desktop/RData/Aar_TN.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_RP.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_IS.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_PC.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_CC.RData")
+
+completeFun <- function(data, desiredCols) {
+  completeVec <- complete.cases(data[, desiredCols])
+  return(data[completeVec, ])
+}
+
+
+# WGT_f<-filter(Ath_TN,paleolog=="WGT-paleolog")
+# mean(WGT_f$Ka.Ksathvshit,na.rm = T)
+# non_f<-filter(Ath_TN,paleolog=="Non-paleolog")
+# mean(non_f$Ka.Ksathvshit,na.rm = T)
+# 
+# library(plyr)
+
+kaksplot<-function(Ath_TN)
+  {
+Ath_TN <- completeFun(Ath_TN, "paleolog")
+mu <- ddply(Ath_TN, "paleolog", summarise, grp.mean=mean(Ka.Ksathvshit,na.rm = T)) #calculate mean value 
+#head(mu)
+plot_Ath_TN<-ggplot(Ath_TN,aes(x = Ka.Ksathvshit,color=paleolog,fill=paleolog))+
+  geom_density(alpha=.3)+xlim(0,1)+
+  ggtitle("Ath_vs_??") + theme(plot.title = element_text(lineheight=.8, face="bold")) +
+  geom_vline(data=mu, aes(xintercept=grp.mean,color=paleolog),linetype="dashed")+
+  annotate("text", x = 0.5, y = 4,   label = paste("mean WGT:",round(mu$grp.mean[2],3)),color="#00BFC4")+
+  annotate("text", x = 0.5, y = 3, label = paste("mean Non:",round(mu$grp.mean[1],3)),color="#F8766D")+
+  labs(x="Ka/Ks")
+return(plot_Ath_TN)
+ }
+
+plot_Ath_TN<-kaksplot(Ath_TN)+ggtitle("Ath_vs_TN");plot_Ath_TN
+plot_Ath_RP<-kaksplot(Ath_RP)+ggtitle("Ath_vs_RP");plot_Ath_RP
+plot_Ath_IS<-kaksplot(Ath_IS)+ggtitle("Ath_vs_IS");plot_Ath_IS
+plot_Ath_PC<-kaksplot(Ath_PC)+ggtitle("Ath_vs_PC");plot_Ath_PC
+plot_Ath_CC<-kaksplot(Ath_CC)+ggtitle("Ath_vs_CC");plot_Ath_CC
+
+plot_Aar_TN<-kaksplot(Aar_TN)+ggtitle("Aar_vs_TN");plot_Aar_TN
+plot_Aar_RP<-kaksplot(Aar_RP)+ggtitle("Aar_vs_RP");plot_Aar_RP
+plot_Aar_IS<-kaksplot(Aar_IS)+ggtitle("Aar_vs_IS");plot_Aar_IS
+plot_Aar_PC<-kaksplot(Aar_PC)+ggtitle("Aar_vs_PC");plot_Aar_PC
+plot_Aar_CC<-kaksplot(Aar_CC)+ggtitle("Aar_vs_CC");plot_Aar_CC
+ 
+
+# A summarize plot of all the plots  
+ 
+#############################################################################
+# Define Multiple plot function
+#
+# ggplot objects can be passed in ..., or to plotlist (as a list of ggplot objects)
+# - cols:   Number of columns in layout
+# - layout: A matrix specifying the layout. If present, 'cols' is ignored.
+#
+# If the layout is something like matrix(c(1,2,3,3), nrow=2, byrow=TRUE),
+# then plot 1 will go in the upper left, 2 will go in the upper right, and
+# 3 will go all the way across the bottom.
+#
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+  library(grid)
+  
+  # Make a list from the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+  
+  numPlots = length(plots)
+  
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated from # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                     ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+  
+  if (numPlots==1) {
+    print(plots[[1]])
+    
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+    
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+      
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
+  }
+}
+#############################################################################
+ 
+
+# A summarize plot of all the plots
+ 
+library(ggplot2)
+multiplot(plot_Ath_TN, plot_Ath_RP,plot_Ath_IS,plot_Ath_PC, plot_Ath_CC,
+          plot_Aar_TN, plot_Aar_RP,plot_Aar_IS,plot_Aar_PC, plot_Aar_CC,cols=2)
+```
+
+**Summary**
+According to the above plot, we didn't observe higher Ka/Ks/mean(Ka/Ks) in paleologs than in non-paleologs across the tested groups.
+
+**Discussion**
+* The plot of TN-Ath group is an outlier, Non-paleologs have much higher mean Ka/Ks than the WGT-paleolog group. 
+  * It's not clear why. But at least the maximum Ka
+
+
+
+# Discussion and my other thoughts
+
+#### **Total number of observed Ka/Ks comparison**
+* TN-Ath	9262
+* RP-Ath	11904
+* IS-Ath	11408
+* PC-Ath	12428
+* CC-Ath	11280
+
+* TN-Aar	9076
+* RP-Aar	9769
+* IS-Aar	9934
+* PC-Aar	10727
+* CC-Aar	9663
+
+#### **Number of WGT-paleolog, non-paleolog, and their ratio**
+```{r}
+Num_paleolog<-function(x){
+  L1<-length(which(x$paleolog == "WGT-paleolog"))
+  L2<-length(which(x$paleolog == "Non-paleolog"))
+  out<-paste("Num_WGT:",L1, "Num_Non:", L2,"ratio:", L1/L2)
+  return(out)
+}
+
+
+Num_paleolog(Ath_TN)
+Num_paleolog(Ath_RP)
+Num_paleolog(Ath_IS)
+Num_paleolog(Ath_PC)
+Num_paleolog(Ath_CC)
+
+Num_paleolog(Aar_TN)
+Num_paleolog(Aar_RP)
+Num_paleolog(Aar_IS)
+Num_paleolog(Aar_PC)
+Num_paleolog(Aar_CC)
+```
+
+* "Num_WGT: 9041 Num_Non: 221 ratio: 40.9095022624434"
+* "Num_WGT: 10051 Num_Non: 260 ratio: 38.6576923076923"
+* "Num_WGT: 9705 Num_Non: 245 ratio: 39.6122448979592"
+* "Num_WGT: 10534 Num_Non: 274 ratio: 38.4452554744526"
+* "Num_WGT: 9551 Num_Non: 234 ratio: 40.8162393162393"
+
+* "Num_WGT: 7695 Num_Non: 178 ratio: 43.2303370786517"
+* "Num_WGT: 8218 Num_Non: 209 ratio: 39.3205741626794"
+* "Num_WGT: 8441 Num_Non: 200 ratio: 42.205"
+* "Num_WGT: 9085 Num_Non: 236 ratio: 38.4957627118644"
+* "Num_WGT: 8153 Num_Non: 199 ratio: 40.9698492462312"
+
+**Discussion**
+The ratio of WGT vs Non is about 40:1 
+which is way higher than what we estimated 68:13
+which suggest for the de novo assembly, there is a bias towards the WGT-paleolog 
+because these genes have more copies, de novo assembly can easily capture these genes.
+On the other hand, there is a reverse bias towards the non-paleologs.
+this bias may leads to a higher assembly error rate in the non-paleologs. 
+
+#### **Compare the mean(Ka), mean(Ks)** 
+```{r}
+library(plyr)
+library(ggplot2)
+load(file="C:/Users/qxs/Desktop/RData/Ath_TN.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_RP.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_IS.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_PC.RData")
+load(file="C:/Users/qxs/Desktop/RData/Ath_CC.RData")
+
+load(file="C:/Users/qxs/Desktop/RData/Aar_TN.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_RP.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_IS.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_PC.RData")
+load(file="C:/Users/qxs/Desktop/RData/Aar_CC.RData")
+
+# compare the Ks value
+mu <- ddply(Ath_TN, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+mu <- ddply(Ath_RP, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu 
+mu <- ddply(Ath_IS, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu 
+mu <- ddply(Ath_PC, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+mu <- ddply(Ath_CC, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+
+mu <- ddply(Aar_TN, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+mu <- ddply(Aar_RP, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+mu <- ddply(Aar_IS, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+mu <- ddply(Aar_PC, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+mu <- ddply(Aar_CC, "paleolog", summarise, grp.mean=mean(Ksathvs,na.rm = T)) ;mu
+
+## compare the Ka value 
+mu <- ddply(Ath_TN, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+mu <- ddply(Ath_RP, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu 
+mu <- ddply(Ath_IS, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu 
+mu <- ddply(Ath_PC, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+mu <- ddply(Ath_CC, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+
+mu <- ddply(Aar_TN, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_RP, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_IS, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_PC, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+mu <- ddply(Aar_CC, "paleolog", summarise, grp.mean=mean(Kaathvshit,na.rm = T)) ;mu
+
+
+```
+**Discussion**
+In Non-paleologs have both higher mean Ka and higher mean Ks than WGT-paleologs acrossing the 10 datasets.
+
+
+
+
+

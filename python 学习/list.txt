@@ -1,0 +1,7 @@
+sra111	100
+sra222	200
+mmmmm I am hydir
+sra444	400sra111	100
+sra222	200
+mmmmm I am hydir
+sra444	400

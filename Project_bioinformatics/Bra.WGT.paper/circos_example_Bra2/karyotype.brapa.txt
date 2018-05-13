@@ -1,0 +1,11 @@
+chr - br1 A01 0 26791027 chr9
+chr - br2 A02 0 26939825 chr10
+chr - br3 A03 0 31765687 chr11
+chr - br4 A04 0 19269588 chr12
+chr - br5 A05 0 25303531 chr13
+chr - br6 A06 0 25210367 chr14
+chr - br7 A07 0 25876095 chr15
+chr - br8 A08 0 20826944 chr16
+chr - br9 A09 0 38884799 chr17
+chr - br10 A10 0 16405179 chr18
+

@@ -1,0 +1,49 @@
+docker images
+
+# docker run
+docker run httpd
+docker run -t -i ubuntu:15.10 /bin/bash 
+
+# add new images
+docker pull ubuntu:13.10
+
+# find new images
+docker search httpd
+
+# create images
+cat Dockerfile
+
+FROM    centos:6.7
+MAINTAINER      Fisher "fisher@sudops.com"
+
+RUN     /bin/echo 'root:123456' |chpasswd
+RUN     useradd runoob
+RUN     /bin/echo 'runoob:123456' |chpasswd
+RUN     /bin/echo -e "LANG=\"en_US.UTF-8\"" >/etc/default/local
+EXPOSE  22
+EXPOSE  80
+CMD     /usr/sbin/sshd -D
+
+docker build -t runoob/centos:6.7 
+
+
+# set docker tag
+docker tag 860c279d2fec runoob/centos:dev
+
+
+# create a python container
+docker run -d -P training/webapp python app.py
+
+# list and remove docker images
+docker images -a
+docker rmi Image Image
+
+
+
+docker run chrisamiller/docker-genomic-analysis vcftools
+https://hub.docker.com/r/chrisamiller/docker-genomic-analysis/~/dockerfile/
+docker pause chrisamiller/docker-genomic-analysis
+
+
+
+

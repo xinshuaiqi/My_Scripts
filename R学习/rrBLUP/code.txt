@@ -1,0 +1,91 @@
+#load in the sample files
+library(rrBLUP)
+setwd("C://Users//Amy J//Documents//webinar")
+#load the Markers and Phenotypes
+Markers <- as.matrix(read.table(file="snp.txt"), header=F)
+head(Markers)
+Pheno <-as.matrix(read.table(file ="traits.txt", header=TRUE))
+head(Pheno)
+#dimensions of the matrix
+dim(Markers)
+dim(Pheno)
+#####
+#what if markers are NA?
+#impute with A.mat
+impute=A.mat(Markers,max.missing=0.5,impute.method="mean",return.imputed=T)
+Markers_impute=impute$imputed
+head(Markers_impute)
+dim(Markers_impute)
+
+#remove markers with more than 50% missing data
+Markers_impute2=Markers_impute[,-c(169,562)]
+dim(Markers_impute)
+dim(Markers_impute2)
+#####
+#######
+#define the training and test populations
+#training-60% validation-40%
+train= as.matrix(sample(1:96, 38))
+test<-setdiff(1:96,train)
+Pheno_train=Pheno[train,]
+m_train=Markers_impute2[train,]
+Pheno_valid=Pheno[test,]
+m_valid=Markers_impute2[test,]
+
+########
+yield=(Pheno_train[,1])
+yield_answer<-mixed.solve(yield, Z=m_train, K=NULL, SE = FALSE, return.Hinv=FALSE)
+YLD = yield_answer$u
+e = as.matrix(YLD)
+pred_yield_valid =  m_valid %*% e
+pred_yield=(pred_yield_valid[,1])+yield_answer$beta
+pred_yield
+yield_valid = Pheno_valid[,1]
+YLD_accuracy <-cor(pred_yield_valid, yield_valid, use="complete" )
+YLD_accuracy 
+
+PHT_HT=(Pheno_train[,2])
+PHT_HT_answer<-mixed.solve(PHT_HT, Z=m_train, K=NULL, SE = FALSE, return.Hinv=FALSE)
+PHT_HT = PHT_HT_answer$u
+e = as.matrix(PHT_HT)
+pred_PHT_HT_valid =  m_valid %*% e
+PHT_HT_valid = Pheno_valid[,2]
+PHT_HT_accuracy <-cor(pred_PHT_HT_valid, PHT_HT_valid, use="complete" )
+PHT_HT_accuracy 
+
+HD_DATE=(Pheno_train[,3])
+HD_DATE_answer<-mixed.solve(HD_DATE, Z=m_train, SE = FALSE, return.Hinv=FALSE)
+HD_DATE = HD_DATE_answer$u
+e = as.matrix(HD_DATE)
+pred_HD_DATE_valid =  m_valid %*% e
+HD_DATE_valid = Pheno_valid[,3]
+HD_DATE_accuracy <-cor(pred_HD_DATE_valid, HD_DATE_valid, use="complete" )
+HD_DATE_accuracy 
+
+
+#### cross validation for many cycles for yield only
+traits=1
+cycles=500
+accuracy = matrix(nrow=cycles, ncol=traits)
+for(r in 1:cycles)
+{
+train= as.matrix(sample(1:96, 29))
+test<-setdiff(1:96,train)
+Pheno_train=Pheno[train,]
+m_train=Markers_impute2[train,]
+Pheno_valid=Pheno[test,]
+m_valid=Markers_impute2[test,]
+
+yield=(Pheno_train[,1])
+yield_answer<-mixed.solve(yield, Z=m_train, K=NULL, SE = FALSE, return.Hinv=FALSE)
+YLD = yield_answer$u
+e = as.matrix(YLD)
+pred_yield_valid =  m_valid %*% e
+pred_yield=(pred_yield_valid[,1])+yield_answer$beta
+pred_yield
+yield_valid = Pheno_valid[,1]
+accuracy[r,1] <-cor(pred_yield_valid, yield_valid, use="complete" )
+}
+mean(accuracy)
+
+  

@@ -1,0 +1,81 @@
+GATK call snp
+# from An Hong 2017-10-27
+
+#index fasta
+samtools faidx
+java -Xmx64G -jar /home/hongan/data/biosoft/picard_2.10.0/picard.jar CreateSequenceDictionary R=B_napus_v4.1.chr.fa O=B_napus_v4.1.chr.dict
+
+#add RG to bam:
+java -Xmx64G -jar /home/hongan/data/biosoft/picard_2.10.0/picard.jar AddOrReplaceReadGroups I="$line"_uniq_map.bam O="$line"_uni_rg.bam RGID=1 RGLB=lib1 RGPL=Illumina RGPU=gatk RGSM=$line
+
+#mark duplicates and index to bam:
+java -Xmx64G -jar /home/hongan/data/biosoft/picard_2.10.0/picard.jar MarkDuplicates I="$line"_uni_rg.bam CREATE_INDEX=true O="$line"_uni_rg_dedup.bam M="$line"_marked_dup_metrics.txt
+
+#Split'N'Trim
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar -T SplitNCigarReads -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa -I "$line"_uni_rg_dedup.bam -o "$line"__uni_rg_dedup_split.bam -rf ReassignOneMappingQuality -RMQF 255 -RMQT 60 -U ALLOW_N_CIGAR_READS
+
+#Recalibrator
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar \
+ -T BaseRecalibrator \
+ -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa \
+ -I "$line"_uni_rg_dedup_split.bam \
+ -L /storage/htc/pireslab/hongan_htc/RNAseq3/napus_R3/chr_gatk.list \
+ -knownSites /storage/htc/pireslab/hongan_htc/RNAseq3/napus_R3/bnapus_knownsnp_nonrandom.vcf \
+ -o "$line"_recal_data.table
+ 
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar \
+ -T PrintReads \
+ -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa \
+ -I "$line"_uni_rg_dedup_split.bam \
+ -L /storage/htc/pireslab/hongan_htc/RNAseq3/napus_R3/chr_gatk.list \
+ -BQSR "$line"_recal_data.table \
+ -o "$line"_recal.bam
+ 
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar \
+ -T BaseRecalibrator \
+ -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa \
+ -I "$line"_uni_rg_dedup_split.bam \
+ -L /storage/htc/pireslab/hongan_htc/RNAseq3/napus_R3/chr_gatk.list \
+ -knownSites /storage/htc/pireslab/hongan_htc/RNAseq3/napus_R3/bnapus_knownsnp_nonrandom.vcf \
+ -BQSR "$line"_recal_data.table \
+ -o "$line"_post_recal_data.table
+ 
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar \
+ -T AnalyzeCovariates \
+ -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa \
+ -L /storage/htc/pireslab/hongan_htc/RNAseq3/napus_R3/chr_gatk.list \
+ -before "$line"_recal_data.table \
+ -after "$line"_post_recal_data.table \
+ -plots "$line"_recalibration_plots.pdf
+
+#SNP caller 
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar \
+ -T HaplotypeCaller \
+ --emitRefConfidence GVCF \
+ -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa \
+ -L /storage/htc/pireslab/hongan_htc/RNAseq3/napus_R3/chr_gatk.list \
+ -dontUseSoftClippedBases \
+ -stand_call_conf 20.0 \
+ -I 3001_recal.bam \
+ -o 3001_raw.vcf
+
+#joint *.g.vcf
+ java -Xmx128G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar \
+ -T GenotypeGVCFs \
+ -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa \
+ --variant 2015_raw.g.vcf \
+ .
+ .
+ .
+ -o napus_only_raw.vcf
+ 
+#filter (hard)
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar \
+ -T VariantFiltration \
+ -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa \
+ -V napus_only_raw.vcf \
+ -window 35 -cluster 3 -filterName FS -filter "FS > 30.0" -filterName QD -filter "QD < 2.0" \
+ -o napus_only_gatkflt.vcf 
+
+#only get SNPs (no indel)
+java -Xmx64G -jar /home/hongan/data/biosoft/GenomeAnalysisTK-3.7/GenomeAnalysisTK.jar -R /storage/htc/pireslab/hongan_htc/B_napus.genome/B_napus_gatk/B_napus_v4.1.chr_gatk.fa -T SelectVariants -V merged_79_napus.vcf -selectType SNP -o merged_79_napus.snp.vcf

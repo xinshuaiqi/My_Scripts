@@ -1,0 +1,7 @@
+cd diff_out
+R
+install.packages("cummeRbund")
+
+library("cummeRbund")
+cuff2<-readCufflinks(gtfFile="../Brapa_gene_v1.5.gtf", genome="v1.5" )
+cuff2

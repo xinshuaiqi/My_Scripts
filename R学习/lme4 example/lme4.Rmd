@@ -1,0 +1,35 @@
+---
+title: "lme4 example"
+author: "qxs"
+date: "December 22, 2017"
+output: html_document
+---
+# ref
+http://lme4.r-forge.r-project.org/lMMwR/lrgprt.pdf
+
+```{r}
+library(lme4)
+str(Dyestuff)
+head(Dyestuff)
+```
+
+
+```{r}
+fm01 <- lmer(Yield ~ 1 + (1|Batch), Dyestuff)
+fm01
+
+
+```
+
+
+```{r}
+fm01ML <- lmer(Yield ~ 1 + (1|Batch), Dyestuff, REML=FALSE)
+fm01ML
+```
+
+- Generally the REML estimates of variance
+components  are  preferred  to  the  ML  estimates.
+- the Batch 37.26% are the percentage explained by Batch 
+- the Residual are the percentage can not be explained. 
+
+

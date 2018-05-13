@@ -1,0 +1,220 @@
+# circos.conf Xinshuai Qi Bra ****************
+# this is the plot used in the WGT paper 2016 9 13
+
+#histogram of the GDE gene counts for ch, pk, tril,sylv
+#run: D:\bio.software\circos-0.69-3\Bra2> perl ..\bin\circos -conf .\circos.conf.5SweeDhist.txt
+
+# all configuration file under etc folder
+karyotype = Bra2/karyotype.brapa.txt   # under Bra folder 
+chromosomes_units = 1000000
+
+
+<colors>
+CBred    = 146,0,0
+CBblue   = 0,109,219
+CBgreen  = 36,255,36
+CByellow = 153,153,0
+CBorange = 204,102,0
+CBpurple = 73,0,146
+CBpink	 = 255,109,182
+</colors>
+
+
+
+
+<ideogram>
+
+<spacing>
+default = 0.005r  # space between chr
+</spacing>
+
+radius    = 0.3r  # total size in the picture
+thickness = 20p # chr thicknes
+fill      = yes
+
+stroke_color     = llgrey
+stroke_thickness = 2p
+
+# Minimum definition for ideogram labels.
+
+show_label       = yes
+# see etc/fonts.conf for list of font names
+label_font       = default 
+label_radius = 3.2r
+label_size       = 30
+label_parallel   = yes
+
+</ideogram>
+
+
+<links>
+
+<link>
+file          = Bra2/WGTsyntnewcolor.txt
+radius        = 0.95r # the middle synteny cycle size
+bezier_radius = 0.1r
+thickness     = 5
+ribbon        = yes
+
+<rules>
+<rule>
+condition = var(size1) < 2.5mb
+show      = no
+</rule>
+
+</rules>
+
+</link>
+
+</links>
+
+
+
+
+<plots>
+
+type      = histogram
+thickness = 3
+
+
+<plot>
+type      = histogram
+file       = Bra2/SweeD3387_EUCA.txt.out.counts
+r0         = 1.0r
+r1         = 2r
+max       = 20
+min       = -1
+
+stroke_type = outline
+thickness   = 2
+color       = vlgray
+fill_color  = vlgray
+extend_bin  = no
+
+<rule>
+condition  = 0
+show       = no
+</rule>
+
+</plot>
+
+
+
+<plot>
+type      = histogram
+file       = Bra2/SweeD3387_ch.txt.out.counts
+r0         = 1.5r
+r1         = 2.5r
+max       = 20
+min       = -1
+
+stroke_type = outline
+thickness   = 2
+color       = CBred
+fill_color  = CBred
+extend_bin  = no
+
+<rule>
+condition  = 0
+show       = no
+</rule>
+
+</plot>
+
+
+
+<plot>
+type      = histogram
+file       = Bra2/SweeD3387_pk.txt.out.counts
+r0         = 2r
+r1         = 3r
+max       = 20
+min       = -1
+
+stroke_type = outline
+thickness   = 2
+color       = CByellow
+fill_color  = CByellow
+extend_bin  = no
+
+<rule>
+condition  = 0
+show       = no
+</rule>
+
+</plot>
+
+
+
+
+<plot>
+type      = histogram
+file       = Bra2/SweeD3387_tril.txt.out.counts
+r0         = 2.5r
+r1         = 3.5r
+max       = 20
+min       = -1
+
+stroke_type = outline
+thickness   = 2
+color       = CBgreen
+fill_color  = CBgreen
+extend_bin  = no
+
+<rule>
+condition  = 0
+show       = no
+</rule>
+
+</plot>
+
+
+<plot>
+type      = histogram
+file       = Bra2/SweeD3387_sylv.txt.out.counts
+r0         = 3r
+r1         = 4r
+max       = 20
+min       = -1
+
+stroke_type = outline
+thickness   = 2
+color       = CBorange
+fill_color  = CBorange
+extend_bin  = no
+
+<rule>
+condition  = 0
+show       = no
+</rule>
+
+</plot>
+
+
+
+
+</plots>
+
+
+
+################################################################
+# The remaining content is standard and required. It is imported 
+# from default files in the Circos distribution.
+#
+# These should be present in every Circos configuration file and
+# overridden as required. To see the content of these files, 
+# look in etc/ in the Circos distribution.
+
+<image>
+# Included from Circos distribution.
+<<include etc/image.conf>>
+</image>
+
+# RGB/HSV color definitions, color lists, location of fonts, fill patterns.
+# Included from Circos distribution.
+<<include etc/colors_fonts_patterns.conf>>
+
+# Debugging, I/O an dother system parameters
+# Included from Circos distribution.
+<<include etc/housekeeping.conf>>
+

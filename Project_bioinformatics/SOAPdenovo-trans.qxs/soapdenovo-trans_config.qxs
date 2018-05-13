@@ -1,0 +1,18 @@
+#maximal read length
+max_rd_len=250
+[LIB]
+#max read length in this lib
+rd_len_cutof=250
+#average insert size
+avg_ins=XXX
+#input files
+	#q1=./NNN_R1.clean
+q1=./NNN_R1.clean
+	#q2=./NNN_R2.clean
+q2=./NNN_R2.clean
+#if seq needs to be reversed
+#if seq needs to be reversed
+reverse_seq=0
+#in which part the reads are used
+asm_flags=3
+rank=1

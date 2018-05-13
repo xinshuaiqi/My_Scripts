@@ -1,0 +1,35 @@
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf 145bra.plink.filter.vcf-sort.vcf
+	--out nucleotide_diversity100000_145tril
+	--window-pi 100000
+	--window-pi-step 25000
+	--indv 134.accepted_hits.bam_134.accepted_hits.bam
+	--indv 135.accepted_hits.bam_135.accepted_hits.bam
+	--indv 136.accepted_hits.bam_136.accepted_hits.bam
+	--indv 137.accepted_hits.bam_137.accepted_hits.bam
+	--indv 138.accepted_hits.bam_138.accepted_hits.bam
+	--indv 139.accepted_hits.bam_139.accepted_hits.bam
+	--indv 140.accepted_hits.bam_140.accepted_hits.bam
+	--indv 141.accepted_hits.bam_141.accepted_hits.bam
+	--indv 142.accepted_hits.bam_142.accepted_hits.bam
+	--indv 143.accepted_hits.bam_143.accepted_hits.bam
+	--indv 144.accepted_hits.bam_144.accepted_hits.bam
+	--indv 145.accepted_hits.bam_145.accepted_hits.bam
+	--indv 146.accepted_hits.bam_146.accepted_hits.bam
+	--indv 149.accepted_hits.bam_149.accepted_hits.bam
+	--indv 51.accepted_hits.bam_51.accepted_hits.bam
+	--indv 52.accepted_hits.bam_52.accepted_hits.bam
+	--indv 53.accepted_hits.bam_53.accepted_hits.bam
+	--indv 55.accepted_hits.bam_55.accepted_hits.bam
+	--indv 85.accepted_hits.bam_85.accepted_hits.bam
+	--indv 88.accepted_hits.bam_88.accepted_hits.bam
+
+Keeping individuals in 'keep' list
+After filtering, kept 20 out of 145 Individuals
+Outputting Windowed Nucleotide Diversity Statistics...
+After filtering, kept 27599 out of a possible 27599 Sites
+Run Time = 1.00 seconds

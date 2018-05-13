@@ -1,0 +1,9 @@
+This part was ran on ratel:
+ /home/qixinshuai/grep
+ 
+ 
+1, on ratel, extract gene chr, position information,“grep.gene.position.pl” save as **.list.out
+2, local on X1 carbon, run “@@@Count genes given bin size. r”
+
+This will be the inputfile for Tara. 
+

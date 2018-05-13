@@ -1,0 +1,18 @@
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf 145bra.plink.filter.vcf-sort.vcf
+	--fst-window-size 100000
+	--fst-window-step 25000
+	--weir-fst-pop popsylv
+	--weir-fst-pop popEU
+	--out fst100000_sylv-EU
+
+After filtering, kept 145 out of 145 Individuals
+Outputting Windowed Weir and Cockerham Fst estimates.
+Weir and Cockerham mean Fst estimate: 0.22637
+Weir and Cockerham weighted Fst estimate: 0.37277
+After filtering, kept 27599 out of a possible 27599 Sites
+Run Time = 1.00 seconds

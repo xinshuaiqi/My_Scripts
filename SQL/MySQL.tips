@@ -1,0 +1,43 @@
+# MySQL 
+# RDBMS:Relational database management system
+
+
+# create database
+- create database Yuanlab;
+- show databases; 
+
+# select database
+while login
+- mysql -D samp_db -u root -p
+after login
+- use <databse name>;
+
+# delete database
+- drop database <db name>;
+
+
+# create table 
+CREATE TABLE IF NOT EXISTS `runoob_tbl`(
+   `runoob_id` INT UNSIGNED AUTO_INCREMENT,
+   `runoob_title` VARCHAR(100) NOT NULL,
+   `runoob_author` VARCHAR(40) NOT NULL,
+   `submission_date` DATE,
+   PRIMARY KEY ( `runoob_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+# load csv to database
+load data infile 'C:\Users\qxs\Desktop\Germination.csv' 
+into table Germination
+fields terminated by ','
+enclosed by ''
+lines terminated by '\n'
+
+
+# head of table 
+DESCRIBE <tb name>; 
+SHOW COLUMNS FROM <tbname>;
+
+# query /Select data 
+
+
