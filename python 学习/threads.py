@@ -33,3 +33,32 @@ else:
 
 
     
+    
+## loop multiprocessing   
+#http://sebastianraschka.com/Articles/2014_multiprocessing.html
+import time
+from multiprocessing import Pool
+
+def printNumber(N):
+    print("I am using CPU", N,"good")
+    time.sleep(2)
+    out = (str(N)+' g_ooo_d')
+    return out
+     
+#printNumber(3)
+
+
+if __name__ == '__main__':
+    array = [1,2,3]
+    p=Pool(4)
+    result= p.map(printNumber,array)
+    print(result)
+    #p.start()
+    #p.join()
+
+# or    
+if __name__ == '__main__':
+    with Pool(5) as p:
+        print(p.map(printNumber, [1, 2, 3]))        
+
+    
