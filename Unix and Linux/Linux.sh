@@ -1,3 +1,6 @@
+E:\mega\__编程 生信 统计\Linux
+@Linux与Unix shell编程指南（完整高清版）.pdf
+
 #改密码
 passwd
 
@@ -8,6 +11,115 @@ Parguta718UA
 #查看cpu数
  lscpu
 nproc
+
+# chmod
+c h m o d命令的一般格式为：
+chmod [who] operator [permission] filename
+w h o的含义是：
+u 文件属主权限。
+g 同组用户权限。
+o 其他用户权限。
+a 所有用户(文件属主、同组用户及其他用户)。
+o p e r a t o r的含义：
++ 增加权限。
+- 取消权限。
+= 设定权限。
+permission的含义：
+r 读权限。
+w 写权限。
+x 执行权限。
+s 文件属主和组s e t - I D。
+t 粘性位*。
+l 给文件加锁，使其他用户无法访问。
+
+chmod 666 rw- rw- rw- 赋予所有用户读和写的权限
+chmod 644 rw- r-- r- - 赋予所有文件属主读和写的权限，所有其他用户读权限
+chmod 744 rwx r-- r- - 赋予文件属主读、写和执行的权限，所有其他用户读的权限
+chmod 664 rw- rw- r- - 赋予文件属主和同组用户读和写的权限，其他用户读权限
+chmod 700 rwx --- --- 赋予文件属主读、写和执行的权限
+chmod 444 r-- r-- r- - 赋予所有用户读权限
+chmod 777
+chmod 755 rwx rx rx 
+
+# find 
+find ./ -name "*.py"
+find . -perm 755 # find permission with 755 
+
+find / -mtime -5 # modified time past 5 days
+find ./ -name "*.py" |xargs file # then list file type 
+
+
+
+# crantabl
+
+# at
+
+# & 后台
+
+# nohup # not hang up  退出账号后继续运行
+写几个命令 存在sh里
+nohup ./myshell.sh > outfile.txt &
+
+
+
+
+qxs@qxs-X1:~/Ubuntu$ read name
+xishuai              
+qxs@qxs-X1:~/Ubuntu$ echo $name
+xishuai  
+
+
+# tee 既打印 又保存结果
+ls | tee ls.out 
+
+# 把标准输出和标准错误一起重定向到一个文件中
+command > filename 2>&1 
+
+# 把c o m m a n d命令以f i l e n a m e文件作为标准输入，以f i l e n a m e 2文件
+# 作为标准输出
+command < filename >filename2 
+
+command < filename # 把c o m m a n d命令以f i l e n a m e文件作为标准输入
+
+command >&m # 把把标准输出重定向到文件描述符m中
+command <&- # 把关闭标准输入
+
+# 如果这个命令执行成功& &那么执行这个命令
+&&
+# 如果这个命令执行失败了|| 那么就执行这个命令
+|| 
+
+
+# grep 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #查看cpu 使用率
 mpstat
