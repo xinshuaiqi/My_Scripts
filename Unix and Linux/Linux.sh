@@ -92,17 +92,24 @@ command <&- # 把关闭标准输入
 
 # grep 
 常用的g r e p选项有：
+-c 只输出匹配行的计数。
+-i 不区分大小写（只适用于单字符）。
+-h 查询多文件时不显示文件名。
+-l 查询多文件时只输出包含匹配字符的文件名。
+-n 显示匹配行及行号。
+-s 不显示不存在或无匹配文本的错误信息。
+-v 显示不包含匹配文本的所有行。
+
+# grep empty line
+grep "^$"
 
 
+# egrep
+# egrep everything from a file
+egrep -f filename data.txt
 
 
-
-
-
-
-
-
-
+# AWK
 
 
 
