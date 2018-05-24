@@ -1,6 +1,18 @@
 E:\mega\__编程 生信 统计\Linux
 @Linux与Unix shell编程指南（完整高清版）.pdf
 
+# loop
+for ((i=1; i<11; i=i+1))
+do
+<linux cmd> >qxs-Bam-Merge.log 2>&1
+done
+
+
+
+
+
+
+
 #改密码
 passwd
 
