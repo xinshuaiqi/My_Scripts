@@ -7,9 +7,9 @@ do
 <linux cmd> >qxs-Bam-Merge.log 2>&1
 done
 
-
-
-
+# Date format
+d=$(date +"%F-%H%M")
+2018-05-24-1919
 
 
 
