@@ -23,11 +23,18 @@ except NameError,msg:
 if filename=="hello":
             raise TypeError("nothing!!!!!")
 
-
-
+while True:
+    try: 
+        x = int(input("please enter an int:"))
+        print ("Good boy")
+    except ValueError:
+        raise ("Urchin boy. Do what I asked.")
+    else：
+        exit()
+    
+    
+    
 ## error types
-
-
 IOError
 NameError
 AttributeError

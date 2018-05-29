@@ -11,7 +11,9 @@ print(qxs)
 
 import re
 qxs = filter (lambda x: re.search(r'\d+',x),names)    ##not sure what 'lambda' mean here.
-print(qxs)
+print (qxs)
+
+
 
 import glob
 glob.glob("*.txt")

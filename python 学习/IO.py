@@ -1,35 +1,33 @@
 
-#current dir ｓｅｔ　ｄｉｒ
+#current dir 
 import os
 os.getcwd()
 ##set dir 
 os.chdir('C:\\Users\\qxs\\Documents\\Python Scripts')
-# 注意， python 字符串里，\要用两个\\表示
+#  
+os.chdir("C:\\Users\\evrpa\\OneDrive - Monsanto\\GitHub\\My_Scripts\\python ??")
 
 
-''' input  '''
-
-###                 raw_input
-qxs=raw.input("tell me what you want")
-#       command-input
-
-s=raw_input (" ")  ## for python 2.x, you need to use raw_input instead of input
-print (s)
-
-x = raw_input ("Enter name: ")
-print ("Hey  " + x)
-
-x=input()
-print x
+# remove line break
+line = 'aaa,bbb,ccc,ddd\n'
+line=line.rstrip() #        remove \n
+line
 
 
+# input
+
+x=input("Enter name: ")
+print (x)
+
+x,y=input().split(",")
+print(x+y)
 
 
-##                      standard in
+##  standard in
 import sys
 print("Please tell me what you want to input?")
 for line in sys.stdin:
-            print line
+            print (line)
 
 while True:
             reply = raw_input ("Enter text (stop for break):")
@@ -83,7 +81,7 @@ f.close()
 
 #read a file
 f = open('data.txt')  #open file
-f = open('data.txt'，'r')
+f = open('data.txt'拢卢'r')
 f.read(3) # only read the frist 3 bite.  
 f.read() # read the rest part of the file
 text = f.read()     # read entire file  to variable 'text'
@@ -140,8 +138,8 @@ print ('byebye')
 '''read a file'''
 
 #read a file
-f = open('、usr/data.txt')  #open file
-f = open('data.txt'，'r')
+f = open('隆垄usr/data.txt')  #open file
+f = open('data.txt'拢卢'r')
 
 f.read() # read the rest part of the file
 f.read(3) # only read the frist 3 bite.
@@ -175,7 +173,7 @@ lines[2]="mmmmm I am hydir\n"
 f.writelines(lines
 f.close()
 
-# 简写
+# 录貌脨麓
 with open ('paty/to/file','r') as f:
 	print (f.read())
 
@@ -196,11 +194,11 @@ f = open('data.txt','w')  #write model
 f.write('hello world\n')
 f.close()
 
-#简写：
+#录貌脨麓拢潞
 with open ('/sure/file','w') as f:
 	f.write("hellow world!")
 	
-# 	Python 命令行参数 ##################
+# 	Python  ##################
 # http://www.runoob.com/python/python-command-line-arguments.html	
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
@@ -223,8 +221,8 @@ def main(argv):
          inputfile = arg
       elif opt in ("-o", "--ofile"):
          outputfile = arg
-   print '输入的文件为：', inputfile
-   print '输出的文件为：', outputfile
+   print ('enter your input', inputfile)
+   print ('enter your output file name', outputfile)
 
 if __name__ == "__main__":
    main(sys.argv[1:])

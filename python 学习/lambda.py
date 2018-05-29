@@ -5,13 +5,13 @@ def f(x,y):
 
 
 #匿名函数 因为函数没有名字，不必担心函数名冲突
-f= lambda x: x*x
+f = lambda x: x*x
 f(2)
 
-def build(x, y):
-    return lambda: x * x + y * y
+def build(x):
+    return lambda x:x*x*x
     
-
+print(build(2))
 
 #偏函数
 #functools.partial的作用就是，把一个函数的某些参数给固定住（也就是设置默认值），
@@ -23,3 +23,7 @@ int2('1000000')
 
 
 
+def square(x):          # 计算平方数
+    return x ** 2
+
+print(map(square, [1,2,3,4,5])) 
