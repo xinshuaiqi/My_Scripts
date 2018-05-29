@@ -124,7 +124,8 @@ egrep -f filename data.txt
 # AWK
 
 
-
+# vim 
+0  移到文章的开头
 
 
 
