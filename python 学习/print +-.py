@@ -1,8 +1,8 @@
 ## print
  
 
-a = ("sss")
-b = ("qxs")
+a = "sss"
+b = "qxs"
 c=a+b
 print (c)
 print (a,b) # with space
@@ -33,7 +33,7 @@ print(out % var)
 
 
 # cat
-cat="I am split \non a line"
+cat="I am split \n on a line"
 cat="I am split \n a line"
 print(cat)
 
@@ -48,7 +48,6 @@ I will do the following:
 \t* CatNip\n\t* Grass
 
 """
-
 print(fcat)
 
 
