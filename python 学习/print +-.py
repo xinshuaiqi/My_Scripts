@@ -1,12 +1,20 @@
 ## print
-print ("Xinshuai is great!")
+ 
 
-a = ("sss")
-b = ("qxs")
+a = "sss"
+b = "qxs"
 c=a+b
 print (c)
-print (a,b)
+print (a,b) # with space
+print (a+b) # no space
 
+
+# 变量替代
+a = ("sss")
+b = ("qxs")
+print(f"{a} and {b}")
+
+print('这个人的名字是%s,已经有%d岁了！'%(name,age))
 
 
 
@@ -24,7 +32,34 @@ var = ('qxs', 'sss')
 print(out % var)  
 
 
-print('这个人的名字是%s,已经有%d岁了！'%(name,age))
+# cat
+cat="I am split \n on a line"
+cat="I am split \n a line"
+print(cat)
+
+cat2 = "I am \\ a \\ cat"
+print(cat2)
+
+## quote multiple lines
+fcat="""
+I will do the following:
+\t* cat food
+\t* finsh
+\t* CatNip\n\t* Grass
+
+"""
+print(fcat)
+
+
+while True:
+    for i in ["/","- ","|","\\","|"]:
+        print ("%s" % i,)
+
+
+
+
+
+
 
 # There are many ways to do this. To fix your current code using %-formatting, you need to pass in an iterable like a tuple:
 

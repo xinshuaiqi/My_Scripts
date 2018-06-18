@@ -54,7 +54,20 @@ func(3, 7)
 func(25, c=24)
 func(c=50, a=100)
 
+# multiple return
+import math
 
+def move(x, y, step, angle=0):
+    nx = x + step * math.cos(angle)
+    ny = y - step * math.sin(angle)
+    return nx, ny
+
+x, y = move(100, 100, 60, math.pi / 6)
+print(x, y)
+
+r = move(100, 100, 60, math.pi / 6)
+print(r)
+# 原来返回值是一个tuple！
 
 # 不确定数量的参数
 def total(initial=5,*numbers, **keywords):

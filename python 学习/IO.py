@@ -16,35 +16,48 @@ line
 
 # input
 
-x=input("Enter name: ")
+x=input("Enter name: \n>")
 print (x)
 
 x,y=input().split(",")
 print(x+y)
 
 
-##  standard in
-import sys
-print("Please tell me what you want to input?")
-for line in sys.stdin:
-            print (line)
 
-while True:
-            reply = raw_input ("Enter text (stop for break):")
-            if reply == 'stop': break
-            print(reply.upper())
 
-#           a better version
-while True:
-    #reply = raw_input ("Enter text:")      #this is for python 2.7, use "input" for python 3.0
-    reply = input ("Enter text:") 
-    if reply == 'stop':
-                        break
-    elif not reply.isdigit():
-                        print('not digit')
-    else:
-                        print(reply.upper())      #python 2.7 you can remove () for print
-print ('byebye')
+## argv 
+from sys import argv
+#"python", "Xinshuai","Wei Ning", "Shanshan" = argv
+a,b,c = argv
+
+print ("The script is called:", a)
+
+
+
+
+
+###  standard in
+#import sys
+#print("Please tell me what you want to input?")
+#for line in sys.stdin:
+#            print (line)
+#
+#while True:
+#            reply = raw_input ("Enter text (stop for break):")
+#            if reply == 'stop': break
+#            print(reply.upper())
+#
+##           a better version
+#while True:
+#    #reply = raw_input ("Enter text:")      #this is for python 2.7, use "input" for python 3.0
+#    reply = input ("Enter text:") 
+#    if reply == 'stop':
+#                        break
+#    elif not reply.isdigit():
+#                        print('not digit')
+#    else:
+#                        print(reply.upper())      #python 2.7 you can remove () for print
+#print ('byebye')
 
 
 
