@@ -117,8 +117,8 @@ fact(5)
 
 
 
-
-
+# if __name__ == '__main__' 如何正确理解?
+https://www.zhihu.com/question/49136398
 
 
 
