@@ -31,8 +31,10 @@ while True:
         raise ("Urchin boy. Do what I asked.")
     else：
         exit()
-    
-    
+try:
+	XXX
+except ImportError: # 导入失败会捕获到ImportError
+    import StringIO    
     
 ## error types
 IOError
