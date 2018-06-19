@@ -235,7 +235,7 @@ from multiprocessing import Pool
 
 def printNumber(N):
     print("I am using CPU", N,"good")
-    time.sleep(2)
+    time.sleep(1)
     out = (str(N)+' g_ooo_d')
     return out
      
@@ -259,6 +259,9 @@ if __name__ == '__main__':
     
     
     
+    
+ # liao xue feng   
+# https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431927781401bb47ccf187b24c3b955157bb12c5882d000
     
      
 from multiprocessing import Process
@@ -304,3 +307,45 @@ if __name__=='__main__':
     print('All subprocesses done.')
     
     
+    
+    
+    
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
