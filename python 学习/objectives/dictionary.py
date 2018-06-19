@@ -20,13 +20,11 @@ print(rec['name']['first'])
 print(rec['job'][0])
 
 ### add         key- value to dictionary
-
 D['name']='qixinshuai'
 print(D)
 
 ###  to check if key in the dictionary
 print( 'name' in D)
-
 #    or
 if not 'qxs' in D:
     print('missing!')
@@ -37,7 +35,6 @@ if not 'qxs' in D:
 d = {'x': 'A', 'y': 'B', 'z': 'C' }
 for k, v in d.items():
     print(k, '=', v)
-
 
 
 ## order keys in dictionary
@@ -51,6 +48,5 @@ for key in ks:
 # alternative way to sor dic
 for D[key] in sorted(D):
     print (key,'=>', D[key])
-	
-	
-	
+
+
