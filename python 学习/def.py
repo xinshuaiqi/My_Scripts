@@ -33,7 +33,10 @@ def printMax(a, b):
 def greeting():
 	print ("Hello world")
 	
-	
+# Multiple return
+def aaa():
+	return bbb,ccc
+B,C=aaa()
 	
 #函数默认参数举例：
 def say(message, times = 1):
