@@ -19,6 +19,11 @@ if __name__=='__main__':
 # this will import everything, and you can all the variable and function directly.
 from pp import * 
 
+# standard module 
+# get more help information, type:
+help()
+math 
+
 
 #第三方 module
 
