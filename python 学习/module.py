@@ -10,7 +10,7 @@ args = sys.argv
 if len(args)==1:
         print('Hello, world!')    
 elif len(args)==2:
-        print('Hello, %s!' % args[1])    
+        print('Hello, %s!' % args[1]) 
 else:
         print('Too many arguments!')
 if __name__=='__main__':
@@ -69,9 +69,21 @@ export PATH = /home/qw/python:$PATH
 一般来讲，一个“包”里面会有多个模块，
 当然，“库”是一个更大的概念了，比如Python标准库中的每个库都有好多个包，每个包都有若干个模块。
 
+# package
+__init__.py
 
 
+#qxs's module
+def test():
+    pass
+    print "qxs, your test works"
+def apple():
+    print "apple pie and beef"
+    __doc__ "this will print some message for you"
 
+__version__="1.0"
+
+dir(sys)  # list all function as a list
 
 
 

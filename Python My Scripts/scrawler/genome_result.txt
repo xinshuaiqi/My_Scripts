@@ -1,0 +1,2209 @@
+
+1. Olea europaea
+Olea europaea Organism overview
+Kingdom: Eukaryota
+Chromosomes: 23
+Organelles: 1
+Genome ID: 10724
+
+2. Zea mays
+Zea mays Organism overview
+Kingdom: Eukaryota
+Chromosomes: 10
+Organelles: 2
+Genome ID: 12
+
+3. Oryza sativa
+Oryza sativa Organism overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Plasmids: 1
+Organelles: 2
+Genome ID: 10
+
+4. Humulus lupulus
+Humulus lupulus Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12884
+
+5. Aegilops tauschii
+Aegilops tauschii Organism overview
+Kingdom: Eukaryota
+Chromosomes: 7
+Organelles: 1
+Genome ID: 10972
+
+6. Brassica oleracea
+Includes important vegetable crops like cauliflower, cabbage, broccoli, kale etc.
+Kingdom: Eukaryota
+Chromosomes: 9
+Organelles: 1
+Genome ID: 10901
+
+7. Fragaria vesca
+Fragaria vesca Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 3314
+
+8. Arabidopsis lyrata
+Arabidopsis lyrata is an out-crossing diploid, closely related to A. thaliana.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 493
+
+9. Beta vulgaris
+Vegetable crop, second largest source of sugar in the world
+Kingdom: Eukaryota
+Chromosomes: 9
+Organelles: 1
+Genome ID: 221
+
+10. Gastrodia elata
+Gastrodia elata overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 67401
+
+11. Viola pubescens
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 64279
+
+12. Metrosideros polymorpha
+Metrosideros polymorpha overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 45178
+
+13. Raphanus raphanistrum
+Raphanus raphanistrum overiew
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 34361
+
+14. Arabidopsis halleri
+Model plant for studying metal accumulation
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13155
+
+15. Eschscholzia californica
+Eschscholzia californica Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12877
+
+16. Cucurbita pepo
+Cucurbita pepo Organism overview
+Kingdom: Eukaryota
+Chromosomes: 20
+Organelles: 1
+Genome ID: 12199
+
+17. Cannabis sativa
+ancient plant,  used for fiber, oil, medicine and also consumed as a narcotic.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11681
+
+18. Vigna angularis
+Vigna angularis Organism overview
+Kingdom: Eukaryota
+Chromosomes: 11
+Organelles: 2
+Genome ID: 11109
+
+19. Vigna unguiculata
+Vigna unguiculata Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11030
+
+20. Eleusine coracana
+Eleusine coracana Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11014
+
+21. Brassica juncea
+Major oilseed crop.
+Kingdom: Eukaryota
+Chromosomes: 18
+Genome ID: 10987
+
+22. Musa acuminata
+Musa acuminata Organism overview
+Kingdom: Eukaryota
+Chromosomes: 11
+Genome ID: 10976
+
+23. Capsicum annuum
+Capsicum annuum Organism overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Organelles: 2
+Genome ID: 10896
+
+24. Saccharum hybrid cultivar
+Saccharum hybrid cultivar overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10780
+
+25. Citrullus lanatus
+watermelon species commonly found in tropical and subtropical climates
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10768
+
+26. Fagopyrum esculentum
+Fagopyrum esculentum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10760
+
+27. Silene latifolia
+Silene latifolia Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10747
+
+28. Marchantia polymorpha
+common liverwort
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 3220
+
+29. Daucus carota
+Daucus carota Organism overview
+Kingdom: Eukaryota
+Chromosomes: 9
+Organelles: 3
+Genome ID: 860
+
+30. Vigna radiata
+Vigna radiata Organism overview
+Kingdom: Eukaryota
+Chromosomes: 11
+Organelles: 2
+Genome ID: 664
+
+31. Manihot esculenta
+Root crop that grows in the tropical and subtropical regions of the world
+Kingdom: Eukaryota
+Chromosomes: 18
+Organelles: 1
+Genome ID: 441
+
+32. Brassica rapa
+Subspecies include several important vegetable crops like turnip and Chinese cabbage
+Kingdom: Eukaryota
+Chromosomes: 10
+Organelles: 1
+Genome ID: 229
+
+33. Hordeum vulgare
+Hordeum vulgare Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 9
+
+34. Selaginella tamariscina
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 68006
+
+35. Apostasia shenzhenica
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 66931
+
+36. Quercus suber
+Quercus suber overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 66905
+
+37. Cicer reticulatum
+Cicer reticulatum overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 66796
+
+38. Cicer echinospermum
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 66795
+
+39. Gossypioides kirkii
+
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 65604
+
+40. Kokia drynarioides
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 65418
+
+41. Handroanthus impetiginosus
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 64326
+
+42. Stenocereus thurberi
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 64147
+
+43. Lophocereus schottii
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 64146
+
+44. Pachycereus pringlei
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 64145
+
+45. Pereskia humboldtii
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 64144
+
+46. Juglans nigra
+Juglans nigra overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 61588
+
+47. Rhizophora apiculata
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 61190
+
+48. Kalanchoe fedtschenkoi
+Kalanchoe fedtschenkoi overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 57474
+
+49. Durio zibethinus
+Durio zibethinus overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 57226
+
+50. Capsicum baccatum
+
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 56712
+
+
+51. Solanum americanum
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 55990
+
+52. Herrania umbratica
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 55117
+
+53. Amana erythronioides
+Amana erythronioides RefSeq Genome
+Kingdom: Eukaryota
+Chromosome: 1
+Organelles: 2
+Genome ID: 54650
+
+54. Nothapodytes nimmoniana
+Nothapodytes nimmoniana overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 54072
+
+55. Xerophyta viscosa
+Xerophyta viscosa overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 53882
+
+56. Artocarpus camansi
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 53544
+
+57. Nicotiana obtusifolia
+Nicotiana obtusifolia Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 53488
+
+58. Atalantia buxifolia
+Atalantia buxifolia overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 53336
+
+59. Citrus cavaleriei
+Citrus cavaleriei overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 53335
+
+60. Juglans mandshurica
+Juglans mandshurica overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 53091
+
+61. Ficus carica
+Ficus carica overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 53047
+
+62. Cephalotus follicularis
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 52700
+
+63. Psidium guajava
+Psidium guajava overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 52475
+
+64. Conringia planisiliqua
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 51578
+
+65. Euclidium syriacum
+Euclidium syriacum strain:GC 0587-68 Genome sequencing
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 51577
+
+66. Citrus x paradisi x Citrus trifoliata
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 51568
+
+67. Drosera capensis
+widely cultivated carnivorous plant of South African origin
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 51464
+
+68. Ruellia speciosa
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 50955
+
+69. Corchorus olitorius
+Corchorus olitorius overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 46639
+
+70. Corchorus capsularis
+Corchorus capsularis Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 46591
+
+71. Citrus unshiu
+Citrus unshiu overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 46555
+
+72. Ipomoea nil
+Ipomoea nil overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 2
+Genome ID: 46552
+
+73. Embelia ribes
+Embelia ribes Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 46551
+
+74. Chenopodium pallidicaule
+native food of the Andean region
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 45564
+
+75. Chenopodium suecicum
+Chenopodium suecicum isolate:BYU_1480 Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 45563
+
+76. Capsicum chinense
+Capsicum chinense Organism overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 45488
+
+77. Liriodendron chinense
+Liriodendron chinense Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 45466
+
+78. Rosa x damascena
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 45184
+
+79. Musa itinerans
+Musa itinerans overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44989
+
+80. Eichhornia paniculata
+Eichhornia paniculata overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44985
+
+81. Mentha longifolia
+Mentha longifolia Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44852
+
+82. Urochloa ruziziensis
+Urochloa ruziziensis overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44764
+
+83. Dichanthelium oligosanthes
+Dichanthelium oligosanthes Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44711
+
+84. Quercus lobata
+Quercus lobata Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44710
+
+85. Zoysia pacifica
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44277
+
+86. Zoysia matrella
+Zoysia matrella Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44276
+
+87. Zoysia japonica
+turf grass
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44275
+
+88. Panicum miliaceum
+Panicum miliaceum Organism overview
+Kingdom: Eukaryota
+Chromosomes: 18
+Organelles: 1
+Genome ID: 44156
+
+89. Monotropa hypopitys
+Monotropa hypopitys Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 44119
+
+90. Vitis aestivalis
+Vitis aestivalis Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 43158
+
+91. Arabis nordmanniana
+Arabis nordmanniana Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 42285
+
+92. Arabis montbretiana
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 42281
+
+93. Eutrema heterophyllum
+Eutrema heterophyllum RefSeq Genome
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 42191
+
+94. Eutrema yunnanense
+Eutrema yunnanense RefSeq Genome
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 42190
+
+95. Silybum marianum
+Silybum marianum overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 40483
+
+96. Vitis cinerea x Vitis riparia
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 40107
+
+97. Ocimum tenuiflorum
+Ocimum tenuiflorum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 40058
+
+98. Solanum commersonii
+Solanum commersonii overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 39785
+
+99. Carnegiea gigantea
+Carnegiea gigantea Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 39095
+
+100. Oropetium thomaeum
+resurrection plant that can survive extreme water stress
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 38890
+
+
+101. Dactylis glomerata
+Dactylis glomerata Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 38864
+
+102. Primula vulgaris
+Primula vulgaris Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 38783
+
+103. Selaginella kraussiana
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 38433
+
+104. Fagopyrum tataricum
+Fagopyrum tataricum overview
+Kingdom: Eukaryota
+Chromosomes: 8
+Genome ID: 38383
+
+105. Hibiscus syriacus
+Hibiscus syriacus overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 37069
+
+106. Ipomoea trifida
+Ipomoea trifida overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 37016
+
+107. Arachis ipaensis
+Arachis ipaensis Organism overview
+Kingdom: Eukaryota
+Chromosomes: 10
+Genome ID: 35711
+
+108. Primula veris
+Primula veris Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 35300
+
+109. Phalaenopsis hybrid cultivar
+Phalaenopsis hybrid cultivar Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 34687
+
+110. Macadamia integrifolia
+Macadamia integrifolia RefSeq Genome
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 34480
+
+111. Diospyros lotus
+Diospyros lotus Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 34476
+
+112. Dioscorea rotundata
+Dioscorea rotundata RefSeq Genome
+Kingdom: Eukaryota
+Chromosomes: 21
+Genome ID: 33396
+
+113. Penstemon grinnellii
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 32664
+
+114. Penstemon centranthifolius
+
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 32663
+
+115. Nicotiana otophora
+Nicotiana otophora Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 32281
+
+116. Aquilaria agallochum
+Aquilaria agallochum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 32033
+
+117. Dendrobium officinale
+Dendrobium officinale overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 31795
+
+118. Solanum arcanum
+Solanum arcanum overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 31602
+
+119. Fraxinus excelsior
+A de novo 454-Illumina whole genome sequence for a self-pollinated progeny of a Fraxinus excelsior tree growing in woodland in Gloucestershire, UK
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 31117
+
+120. Azadirachta indica
+Azadirachta indica Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 30018
+
+121. Genlisea aurea
+Genlisea aurea
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24580
+
+122. Fragaria orientalis
+Fragaria orientalis
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24460
+
+123. Fragaria nubicola
+diploid Fragaria species
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24459
+
+124. Fragaria nipponica
+Fragaria nipponica
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24458
+
+125. Fragaria iinumae
+diploid Fragaria species
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24457
+
+126. Hordeum pubiflorum
+Hordeum pubiflorum
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24431
+
+127. Zizania latifolia
+Zizania latifolia
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24412
+
+128. Elaeis oleifera
+Elaeis oleifera overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24188
+
+129. Solanum habrochaites
+Solanum habrochaites overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 24151
+
+130. Solanum pennellii
+Solanum pennellii overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Organelles: 1
+Genome ID: 24150
+
+131. Rhazya stricta
+Rhazya stricta overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 22340
+
+132. Cucurbita moschata
+Cucurbita moschata overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 18321
+
+133. Betula nana
+dwarf birch
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 18318
+
+134. Arabis alpina
+Arabis alpina overview
+Kingdom: Eukaryota
+Chromosomes: 8
+Genome ID: 17813
+
+135. Aethionema arabicum
+Aethionema arabicum overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 17729
+
+136. Sisymbrium irio
+common winter annual of Brassicaceae family
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 17728
+
+137. Morus notabilis
+Morus notabilis overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 17692
+
+138. Juglans regia
+Juglans regia overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 17683
+
+139. Tarenaya hassleriana
+Tarenaya hassleriana overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 17630
+
+140. Santalum album
+Santalum album overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 17487
+
+141. Leavenworthia alabamica
+Leavenworthia alabamica overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 17465
+
+142. Triticum urartu
+Triticum urartu overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 16746
+
+143. Utricularia gibba
+Utricularia gibba overview
+Kingdom: Eukaryota
+Chromosomes: 4
+Genome ID: 16713
+
+144. Miscanthus sacchariflorus
+Miscanthus sacchariflorus overview
+Kingdom: Eukaryota
+Chromosomes: 19
+Genome ID: 16645
+
+145. Thlaspi arvense
+Thlaspi arvense overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 16486
+
+146. Actinidia chinensis
+Kiwifruit, economically important fruit tree
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 16401
+
+147. Ziziphus jujuba
+fruit bearing tree
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 15586
+
+148. Citrus medica
+Citrus medica overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 15344
+
+149. Barbarea vulgaris
+Barbarea vulgaris overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 14953
+
+150. Boehmeria nivea
+Chinese silk-plant
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 14941
+
+
+151. Dianthus caryophyllus
+flowering plant
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 14768
+
+152. Echinochloa crus-galli
+Echinochloa crus-galli overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 14528
+
+153. Ensete ventricosum
+close relative of banana
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 14466
+
+154. Nelumbo nucifera
+Nelumbo nucifera overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 14095
+
+155. Camelina sativa
+polyploid, stress-tolerant oil seed species of the Brassicaeae family
+Kingdom: Eukaryota
+Chromosomes: 20
+Genome ID: 14087
+
+156. Punica granatum
+Punica granatum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13946
+
+157. Ananas comosus
+Ananas comosus var. comosus Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 13945
+
+158. Prunus mume
+Prunus mume Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 13911
+
+159. Passiflora edulis
+Passiflora edulis Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13910
+
+160. Penstemon fruticosus
+Penstemon fruticosus Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13612
+
+161. Leersia perrieri
+Leersia perrieri Organism overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 13503
+
+162. Penstemon dissectus
+ornamental plant with bright colored tubular flowers
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13465
+
+163. Penstemon davidsonii
+Penstemon davidsonii overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13464
+
+164. Penstemon cyananthus
+Penstemon cyananthus overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13453
+
+165. Triticum dicoccoides
+Triticum dicoccoides overview
+Kingdom: Eukaryota
+Chromosomes: 14
+Genome ID: 13332
+
+166. Cucurbita maxima
+Cucurbita maxima overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13324
+
+167. Populus euphratica
+drought, salt and alkalinity tolerant poplar species
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 13265
+
+168. Capsella bursa-pastoris
+Capsella bursa-pastoris overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13251
+
+169. Nicotiana attenuata
+Nicotiana attenuata overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 13243
+
+170. Glycine soja
+Glycine soja overview
+Kingdom: Eukaryota
+Chromosomes: 20
+Genome ID: 13239
+
+171. Euphorbia esula
+Euphorbia esula overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 13147
+
+172. Nicotiana sylvestris
+Nicotiana sylvestris Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 13135
+
+173. Raphanus sativus
+Raphanus sativus overview
+Kingdom: Eukaryota
+Chromosomes: 9
+Organelles: 2
+Genome ID: 12929
+
+174. Macleaya cordata
+Macleaya cordata overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12912
+
+175. Catharanthus roseus
+Catharanthus roseus Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12882
+
+176. Momordica charantia
+Momordica charantia overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12860
+
+177. Erigeron canadensis
+Conyza canadensis Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12828
+
+178. Fragaria x ananassa
+cultivated strawberry
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12826
+
+179. Pyrus x bretschneideri
+Pyrus x bretschneideri Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12793
+
+180. Panicum hallii
+Panicum hallii overview
+Kingdom: Eukaryota
+Chromosomes: 9
+Genome ID: 12791
+
+181. Carthamus tinctorius
+oil rich plant of Asteraceae family
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12785
+
+182. Chenopodium quinoa
+Chenopodium quinoa Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 12754
+
+183. Eucalyptus camaldulensis
+Eucalyptus camaldulensis overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12405
+
+184. Vicia faba
+Vicia faba Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12339
+
+185. Eutrema salsugineum
+Eutrema salsugineum Organism overview
+Kingdom: Eukaryota
+Chromosomes: 7
+Genome ID: 12266
+
+186. Nicotiana tomentosiformis
+Nicotiana tomentosiformis Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 12239
+
+187. Boechera stricta
+Closely related to cruciferous plants
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12234
+
+188. Dorcoceras hygrometricum
+Boea hygrometrica overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12223
+
+189. Pinus lambertiana
+Pinus lambertiana Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12196
+
+190. Vaccinium macrocarpon
+Vaccinium macrocarpon overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12173
+
+191. Pseudotsuga menziesii
+Douglas-fir is a coniferous tree of family Pinaceae
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12085
+
+192. Arachis duranensis
+Arachis duranensis Organism overview
+Kingdom: Eukaryota
+Chromosomes: 10
+Genome ID: 12052
+
+193. Pisum sativum
+Pisum sativum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 12050
+
+194. Amborella trichopoda
+Amborella trichopoda Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 12031
+
+195. Persea americana
+ Avocodo is an oil-rich, highly nutritious fruit native to Mexico
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11781
+
+196. Prunus avium
+Prunus avium Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11780
+
+197. Ipomoea batatas
+Sweet potato is a tuberous perennial
+Kingdom: Eukaryota
+Chromosomes: 15
+Genome ID: 11776
+
+198. Rosa chinensis
+Rosa chinensis Organism overview
+Kingdom: Eukaryota
+Chromosomes: 7
+Organelles: 2
+Genome ID: 11715
+
+199. Betula pendula
+Betula pendula Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 2
+Genome ID: 11641
+
+200. Sesamum indicum
+Sesamum indicum strain:Zhongzhi 11 Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 11560
+
+
+201. Phalaenopsis equestris
+Phalaenopsis equestris Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 11403
+
+202. Oryza meridionalis
+A wild rice in Australia, one of the rice species included in the OMAP project
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 11319
+
+203. Oryza glumipatula
+Oryza glumipatula Organism overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 11318
+
+204. Asclepias syriaca
+Asclepias syriaca overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11317
+
+205. Citrus clementina
+Citrus clementina Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11310
+
+206. Oryza meyeriana var. granulata
+Wild rice from Thailand; one of the species being used in the OMAP project
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11287
+
+207. Oryza longistaminata
+Oryza longistaminata
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 11285
+
+208. Solanum pimpinellifolium
+Solanum pimpinellifolium Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11283
+
+209. Picea glauca
+Picea glauca overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 11258
+
+210. Dioscorea alata
+yam, important food crop of tropics
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11170
+
+211. Pinus sylvestris
+Pinus sylvestris is an important coniferous tree
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11158
+
+212. Picea abies
+Picea abies is one of the major conifer species of Europe.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11155
+
+213. Aquilegia coerulea
+Flowering plant of Ranunculaceae. Famous for its beautiful flowers.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11153
+
+214. Rosa multiflora
+Rosa multiflora Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11113
+
+215. Trifolium pratense
+Trifolium pratense Organism overview
+Kingdom: Eukaryota
+Chromosomes: 7
+Genome ID: 11112
+
+216. Pinus taeda
+Fast growing gymnosperm
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 11027
+
+217. Lupinus angustifolius
+Lupinus angustifolius Organism overview
+Kingdom: Eukaryota
+Chromosomes: 20
+Genome ID: 11024
+
+218. Citrus maxima
+Citrus maxima Organism overview
+Kingdom: Eukaryota
+Chromosomes: 9
+Genome ID: 11001
+
+219. Cenchrus americanus
+Cenchrus americanus Organism overview
+Kingdom: Eukaryota
+Chromosomes: 7
+Genome ID: 10997
+
+220. Hordeum bulbosum
+Hordeum bulbosum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10991
+
+221. Quercus robur
+Quercus robur Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10990
+
+222. Brassica nigra
+Brassica nigra grown for its oil rich seeds and spice
+Kingdom: Eukaryota
+Chromosomes: 8
+Genome ID: 10988
+
+223. Setaria italica
+Setaria italica Organism overview
+Kingdom: Eukaryota
+Chromosomes: 9
+Organelles: 1
+Genome ID: 10982
+
+224. Eragrostis tef
+Eragrostis tef Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10979
+
+225. Asparagus officinalis
+Asparagus officinalis Organism overview
+Kingdom: Eukaryota
+Chromosomes: 10
+Genome ID: 10978
+
+226. Solanum melongena
+Solanum melongena Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10973
+
+227. Oryza minuta
+A perennial wild rice species from southeast Asia; one of the rice species included in the OMAP project.
+Kingdom: Eukaryota
+Chromosomes: 2
+Genome ID: 10965
+
+228. Oryza officinalis
+A tropical and sub-tropical wild rice species; one of the rice species included in the OMAP project.
+Kingdom: Eukaryota
+Chromosome: 1
+Genome ID: 10964
+
+229. Oryza punctata
+An African wild rice variety; one of the rice species included in the OMAP project.
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 10963
+
+230. Gossypium arboreum
+A diploid cotton variety which grows as a small tree or a shrub
+Kingdom: Eukaryota
+Chromosomes: 13
+Organelles: 1
+Genome ID: 10948
+
+231. Nicotiana benthamiana
+Nicotiana benthamiana Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10940
+
+232. Avena sativa
+Avena sativa Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10893
+
+233. Oryza brachyantha
+Oryza brachyantha Organism overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 10862
+
+234. Gossypium barbadense
+Gossypium barbadense overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10770
+
+235. Castanea mollissima
+Castanea mollissima overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10727
+
+236. Gossypium hirsutum
+cultivated tetraploid cotton
+Kingdom: Eukaryota
+Chromosomes: 26
+Organelles: 2
+Genome ID: 10704
+
+237. Citrus sinensis
+Citrus sinensis Organism overview
+Kingdom: Eukaryota
+Chromosomes: 9
+Organelles: 1
+Genome ID: 10702
+
+238. Cucumis melo
+Cucumis melo Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 10697
+
+239. Lagenaria siceraria
+Bottle gourd, common vegetable plant
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 10464
+
+240. Trifolium subterraneum
+Trifolium subterraneum overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 8822
+
+241. Spinacia oleracea
+Spinacia oleracea overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 7547
+
+242. Linum usitatissimum
+Flaxseed, rich in alpha-linolenic acid and a good source of soluble fibre mucilage
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 6953
+
+243. Amaranthus hypochondriacus
+Amaranthus hypochondriacus Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 3647
+
+244. Schrenkiella parvula
+Eutrema parvulum overview
+Kingdom: Eukaryota
+Chromosomes: 7
+Genome ID: 3585
+
+245. Gossypium raimondii
+Gossypium raimondii Organism overview
+Kingdom: Eukaryota
+Chromosomes: 13
+Organelles: 1
+Genome ID: 3239
+
+246. Cicer arietinum
+Cicer arietinum Organism overview
+Kingdom: Eukaryota
+Chromosomes: 8
+Organelles: 1
+Genome ID: 2992
+
+247. Cajanus cajan
+Cajanus cajan Organism overview
+Kingdom: Eukaryota
+Chromosomes: 11
+Organelles: 1
+Genome ID: 2878
+
+248. Oryza nivara
+A wild rice from India; one of rice species being used in the OMAP project.
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 2841
+
+249. Spirodela polyrhiza
+Spirodela polyrhiza overview
+Kingdom: Eukaryota
+Chromosomes: 20
+Genome ID: 2792
+
+250. Oryza barthii
+Oryza barthii overview
+Kingdom: Eukaryota
+Chromosomes: 12
+Genome ID: 2750
+
+
+251. Elaeis guineensis
+Elaeis guineensis Organism overview
+Kingdom: Eukaryota
+Chromosomes: 16
+Organelles: 1
+Genome ID: 2669
+
+252. Phoenix dactylifera
+Date Palm, critical agricultural tree of arid lands
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 2
+Genome ID: 2664
+
+253. Zostera marina
+Zostera marina overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 2662
+
+254. Eucalyptus grandis
+Eucalyptus is a commercially important forest tree of family Myrtaceae.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 2181
+
+255. Amaranthus tuberculatus
+Amaranthus tuberculatus
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 2173
+
+256. Cucumis sativus
+Cucumis sativus Organism overview
+Kingdom: Eukaryota
+Chromosomes: 7
+Organelles: 4
+Genome ID: 1639
+
+257. Jatropha curcas
+A perennial shrub of Euphorbiaceae family that bears oil-rich seeds and can be  grown in low to high rainfall areas.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 915
+
+258. Brachypodium distachyon
+Brachypodium distachyon Organism overview
+Kingdom: Eukaryota
+Chromosomes: 5
+Organelles: 1
+Genome ID: 698
+
+259. Ricinus communis
+Ricinus communis Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 617
+
+260. Theobroma cacao
+Theobroma cacao Organism overview
+Kingdom: Eukaryota
+Chromosomes: 10
+Organelles: 1
+Genome ID: 572
+
+261. Carica papaya
+Papaya is a fruit tree of the tropical and subtropical regions of the world.
+Kingdom: Eukaryota
+Chromosome: 1
+Organelles: 2
+Genome ID: 513
+
+262. Hevea brasiliensis
+Hevea brasiliensis Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 503
+
+263. Capsella rubella
+A closely related genus of Arabidopsis
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 498
+
+264. Erythranthe guttata
+Erythranthe guttata Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 497
+
+265. Lolium perenne
+Lolium perenne Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 484
+
+266. Oryza glaberrima
+An African wild rice species; one of the rice species being used in the OMAP project.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 458
+
+267. Oryza rufipogon
+Wild rice species found in tropical and subtropical regions of Asia and Australia; one of the rice species included in the OMAP project.
+Kingdom: Eukaryota
+Chromosome: 1
+Genome ID: 457
+
+268. Nicotiana tabacum
+Nicotiana tabacum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 2
+Genome ID: 425
+
+269. Selaginella moellendorffii
+A non flowering plant of class Lycopsida that falls between the vascular and nonvascular plants in the evolutionary tree. Its genome is being sequenced by DOE.
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 411
+
+270. Vitis vinifera
+Vitis vinifera Organism overview
+Kingdom: Eukaryota
+Chromosomes: 19
+Organelles: 2
+Genome ID: 401
+
+271. Solanum tuberosum
+Solanum tuberosum Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 400
+
+272. Secale cereale
+Secale cereale Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 399
+
+273. Prunus persica
+Prunus persica Organism overview
+Kingdom: Eukaryota
+Chromosomes: 8
+Organelles: 1
+Genome ID: 388
+
+274. Physcomitrella patens
+Moss, used as a model plant for functional genomics, evo-devo studies and comparative genomics.
+Kingdom: Eukaryota
+Chromosomes: 27
+Organelles: 2
+Genome ID: 383
+
+275. Phaseolus vulgaris
+Phaseolus vulgaris Organism overview
+Kingdom: Eukaryota
+Chromosomes: 11
+Genome ID: 380
+
+276. Malus domestica
+Malus domestica Organism overview
+Kingdom: Eukaryota
+Chromosomes: 17
+Organelles: 1
+Genome ID: 358
+
+277. Lactuca sativa
+Lettuce is a leaf crop of Compositae family. Commonly used as salad green
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 1
+Genome ID: 352
+
+278. Helianthus annuus
+Helianthus annuus Organism overview
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Organelles: 4
+Genome ID: 351
+
+279. Brassica napus
+Rapeseed, cultivated for its oil rich seeds and for forage
+Kingdom: Eukaryota
+Chromosomes: 19
+Plasmids: 1
+Organelles: 2
+Genome ID: 203
+
+280. Sorghum bicolor
+Sorghum bicolor Organism overview
+Kingdom: Eukaryota
+Chromosomes: 10
+Organelles: 2
+Genome ID: 108
+
+281. Populus trichocarpa
+Fast growing tree, first forest tree to be sequenced
+Kingdom: Eukaryota
+Chromosomes: 19
+Organelles: 1
+Genome ID: 98
+
+282. Lotus japonicus
+Weed legume with a small genome
+Kingdom: Eukaryota
+
+Chromosomes:  no data
+                
+Genome ID: 89
+
+283. Triticum aestivum
+Triticum aestivum Organism overview
+Kingdom: Eukaryota
+Chromosome: 1
+Genome ID: 11
+
+284. Solanum lycopersicum
+Solanum lycopersicum Organism overview
+Kingdom: Eukaryota
+Chromosomes: 13
+Organelles: 1
+Genome ID: 7
+
+285. Medicago truncatula
+Medicago truncatula Organism overview
+Kingdom: Eukaryota
+Chromosomes: 8
+Organelles: 1
+Genome ID: 6
+
+286. Glycine max
+Glycine max Organism overview
+Kingdom: Eukaryota
+Chromosomes: 20
+Organelles: 2
+Genome ID: 5
+
+287. Arabidopsis thaliana
+Small flowering plant of mustard family and the first to be completely sequenced
+Kingdom: Eukaryota
+Chromosomes: 6
+Organelles: 2
+Genome ID: 4
+

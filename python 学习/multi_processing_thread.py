@@ -307,7 +307,40 @@ if __name__=='__main__':
     print('All subprocesses done.')
     
     
-    
+	
+	
+	
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May 15 21:55:29 2018
+
+@author: qxs
+"""
+
+import time
+from multiprocessing import Pool
+
+def printNumber(N):
+    print("I am using CPU", N,"good")
+    time.sleep(2)
+    out = (str(N)+' g_ooo_d')
+    return out
+     
+#printNumber(3)
+
+"""
+def cube(x):
+    return x**3
+
+pool = mp.Pool(processes=4)
+results = pool.map(cube, range(1,7))
+print(results)
+"""
+
+
+if __name__ == '__main__':
+    with Pool(5) as p:
+        print(p.map(printNumber, [1, 2, 3]))     
     
     
 

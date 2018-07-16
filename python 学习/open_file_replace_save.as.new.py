@@ -5,8 +5,8 @@ replacements = {"a.*":'arabidopsis thaliana'}
 
 
 with open ('name.txt') as infile, open ('newname.txt','w') as outfile:
-            for line in infile:
-                        for src, target in replacements.iteritems():
-                                    line = line.replace(src,target)
-                        outfile.write(line)
+	for line in infile:
+		for src, target in replacements.iteritems():
+			line = line.replace(src,target)
+		outfile.write(line)
 
