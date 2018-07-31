@@ -10,11 +10,24 @@ Created on Mon May 28 21:08:53 2018
 
 
 # https://www.zhihu.com/question/26930016
-# normal function
+
+# 装饰器
+def rgp_log(func):
+    def wrapper(*arg, **kw):
+        print (func.__name__+" started")
+        func(*arg, **kw)
+        print (func.__name__+" finished")
+    return wrapper
+
+@rgp_log
 def cal(x, y):
-    result = x + y
+    result = int(x) + int(y)
+    #print(result)
     return result
-cal(1,2)
+
+a=cal(1,2)
+
+
 
 # 装饰器
 def report(func):
