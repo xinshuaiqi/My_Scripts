@@ -8,8 +8,13 @@ Created on Mon Dec 25 12:07:02 2017
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(-1, 1, 50)
+x = np.linspace(0, 10, 100)
 y = 2*x + 1
+z=np.sin(x)
+
+data= 2 * np.random.random((10,10))
+data2= 3 * np.random.random((10,10))
+
 
 
 plt.figure()
