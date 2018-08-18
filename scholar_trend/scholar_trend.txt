@@ -1,0 +1,42 @@
+https://scholar.google.com/scholar?as_q=Rice&as_epq=genome&as_oq=GBS&as_eq=Brassica&as_occt=any&as_sauthors=Xinshuai&as_publication=Molecular+Ecology&as_ylo=2000&as_yhi=2018&hl=en&as_sdt=0%2C26
+
+https://scholar.google.com/scholar?as_q=Rice+GBS+genome&as_epq=&as_oq=&as_eq=Brassica&as_occt=title&as_sauthors=Xinshuai&as_publication=Molecular+Ecology&as_ylo=2000&as_yhi=2018&hl=en&as_sdt=0%2C26
+
+https://scholar.google.com/scholar?as_q=&as_epq=rice+genome&as_oq=&as_eq=+&as_occt=any&as_sauthors=&as_publication=&as_ylo=2000&as_yhi=2018&hl=en&as_sdt=0%2C26
+
+https://scholar.google.com/scholar?as_sdt=1,26&q=%22rice+genome%22&hl=en&as_ylo=2000&as_yhi=2018
+
+https://scholar.google.com/scholar?as_vis=1&q=%22rice+genome%22&hl=en&as_sdt=1,26&as_ylo=2000&as_yhi=2018
+
+
+# top authors
+https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=%22plant+genome%22&btnG=
+https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=%22plant+genome%22&before_author=_Uyk_1EHAAAJ&astart=0
+https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=%22plant+genome%22&after_author=ZEchAHX4__8J&astart=10
+https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=%22plant+genome%22&after_author=H75NADf9__8J&astart=20
+
+
+
+
+as_q=All the words
+as_epq=exact phrase
+as_oq=one of the words
+as_eq=without words
+as_occt=any/title
+as_sauthors=
+as_publication=Molecular+Ecology
+as_ylo=
+as_yhi=
+hl=
+as_sdt=
+
+
+
+
+
+# 
+label:genomics
+https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:genomics
+
+
+
