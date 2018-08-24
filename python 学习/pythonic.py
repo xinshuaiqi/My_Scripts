@@ -85,9 +85,27 @@ else:
 "".join(['a','b'])
 
 
+# @property
+class fruit():
+    @property
+    def taste(self):
+        print('sweet')
+
+apple=fruit()
+apple.taste
 
 
+# temperature
+class C:
+    def __init__(self,temperature = 0):
+        self._t = temperature
+        
+    def to_f(self):
+        return (self._t * 1.8) + 32
+    
+    def tem
 
 
-
+# sorted vs sort
+sorted('xinshuaiqi')
 
