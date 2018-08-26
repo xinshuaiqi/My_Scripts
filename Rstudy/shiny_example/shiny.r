@@ -3,7 +3,13 @@
 library(shiny)
 runApp("E:/Dropbox/github_qxs/My_Scripts/Rstudy/shiny_example")
 
+#
 
+
+
+
+
+##########################################################
 #http://yanping.me/shiny-tutorial/
   
 library(shiny)
