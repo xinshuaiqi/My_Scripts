@@ -8,6 +8,11 @@ def f(x,y):
 f = lambda x: x*x
 f(2)
 
+
+ff = lambda x,y: x+y
+ff(2,3)
+
+
 def build(x):
     return lambda x:x*x*x
     
