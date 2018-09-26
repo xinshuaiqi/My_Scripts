@@ -10,7 +10,7 @@ docker pull ubuntu:13.10
 # find new images
 docker search httpd
 
-# create images
+# 1 create images
 cat Dockerfile
 
 FROM    centos:6.7
@@ -24,11 +24,15 @@ EXPOSE  22
 EXPOSE  80
 CMD     /usr/sbin/sshd -D
 
-docker build -t runoob/centos:6.7 
+> docker build -t runoob/centos:6.7 
 
 
-# set docker tag
-docker tag 860c279d2fec runoob/centos:dev
+# 2 set docker tag
+> docker tag 860c279d2fec runoob/centos:dev
+
+3 pull 
+
+docker push $REPO$BUILD_NAME
 
 
 # create a python container
@@ -38,11 +42,60 @@ docker run -d -P training/webapp python app.py
 docker images -a
 docker rmi Image Image
 
+# list and rm container
+
+docker ps
+
+docker rm 
+
 
 
 docker run chrisamiller/docker-genomic-analysis vcftools
 https://hub.docker.com/r/chrisamiller/docker-genomic-analysis/~/dockerfile/
 docker pause chrisamiller/docker-genomic-analysis
+
+
+
+# https://yeasy.gitbooks.io/docker_practice/image/pull.html
+
+##### Docker pull [from docker hub]
+
+```
+docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
+docker pull ubuntu:16.04
+
+```
+
+
+
+##### list images
+
+> docker image ls 
+
+查看镜像、容器、数据卷所占用的空间 
+
+> docker system df
+
+
+
+# Best practices for writing Dockerfiles
+
+# https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
