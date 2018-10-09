@@ -71,3 +71,13 @@ RUN apt-get update && apt-get install -y \
 ENV PYTHONPATH="/home/biodocker/code:$PYTHONPATH"
 RUN export PATH=$PATH:/home/biodocker/
 ENV PATH /usr/local/postgres-$PG_MAJOR/bin:$PATH
+
+# estimate time cost
+import datetime
+start_time = datetime.datetime.now()
+
+end_time = datetime.datetime.now()
+d = divmod(start_time-end_time,86400)  # days
+h = divmod(d[1],3600)  # hours
+m = divmod(h[1],60)
+print '%d days, %d hours, %d minutes, %d seconds' % (d[0],h[0],m[0],s)
