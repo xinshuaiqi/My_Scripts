@@ -1,3 +1,24 @@
+# 使一个script在哪里都能执行
+1） chmod u+x XXX
+2) add #!/usr/bin/python3
+3) add export PATH="YOUR_PATH_WITHOUT_TRAILING_SLASH:$PATH" to .profile at your home directory;
+then source .profile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 E:\mega\__编程 生信 统计\Linux
 @Linux与Unix shell编程指南（完整高清版）.pdf
 
@@ -19,7 +40,7 @@ d=$(date +"%F-%H%M")
 passwd
 
 # qixinshuai
-Parguta718UA
+
 
 
 #查看cpu数
