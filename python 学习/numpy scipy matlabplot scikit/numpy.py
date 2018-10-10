@@ -19,6 +19,8 @@ b = np.array([[1,2,3],[4,5,6]],dtype=np.float)  #np.int; np.float; complex
 c = np.empty((3,4)) # create a empty 
 c
 
+type(a)
+# numpy.ndarray
 
 a.ndim  #2
 a.shape # x*5
