@@ -48,3 +48,14 @@ SyntaxError
 TypeError
 ValueError
 UnboundLocalError
+
+try:
+    process = subprocess.run(cmd, shell=True, check=False, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    with open('/tmp/esp_worker.log','a') as fp:
+        fp.write("[info] " + process.stdout.decode('utf-8') + os.linesep)
+except Exception as ex:
+    with open('/tmp/esp_worker.log','a') as fp:
+         if ex is None:
+             fp.write("[error] " + "Exception is None" + os.linesep)
+         else:
+             fp.write("[error] " + str(ex) + os.linesep)
