@@ -1,0 +1,89 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# contact: Xinshuai Qi 
+# Version: 
+# Last Update: 
+
+import argparse
+from argparse import RawTextHelpFormatter
+parser=argparse.ArgumentParser(
+    description = 
+'''===> XXX Pipeline <===
+The XXX includes the following functions:
+    All
+    AA
+    BB
+	
+Usage: 
+python3 XX.py -AA -Y XX.yaml 
+Please configurate the "XX.yaml" file before run this script
+Contact: Xinshuai Qi
+''', 
+formatter_class=RawTextHelpFormatter)
+parser.add_argument("-A","--All",      dest='All',      help="XX",action="store_true")
+parser.add_argument("-S","--SSSS",     dest='SSS',   help="XX",action="store_true")  
+parser.add_argument("-Y","--Yaml",     dest='Yamlfile', help="XX",required=True)
+args=parser.parse_args()    
+
+
+import os 
+import sys
+import logging
+import yaml
+import subprocess
+import datetime
+
+
+# set the logging
+d=datetime.datetime.today().strftime("%Y%m%d_%I%M")
+logfile="XX"+d+'.log'
+logging.basicConfig(
+    filename=os.path.join(os.getcwd(),logfile),
+    level=logging.INFO,
+    format = '%(levelname)s - %(asctime)s - %(message)s'
+    )
+
+# load parameters
+par=''
+def load():
+    yfile=args.Yamlfile
+    file = os.path.join(os.getcwd(),yfile)
+    try:
+        with open(file) as yaml_f:
+            global par
+            par = yaml.load(yaml_f)
+            logging.info('load yaml file: {}'.format(args.Yamlfile))
+    except: 
+        logging.error('Can not load yaml file')   
+load()	
+print(par)
+
+
+########################################
+### function1
+def AA(i):
+    # function of AA
+    read_file=os.path.join(par['XX']+".part-"+str(i)+".fasta"))
+    ref=(par['XX'])
+    cmd='nohup XX'
+    print(cmd)    
+    stdout=subprocess.check_output(cmd,shell=True)
+    logging.info(stdout)
+AA()
+
+def BB():
+    for i in range(1,int(par['sdf'])+1):
+        i=str(format(i,'02d'))
+        pbsv_minimap2(i)
+        print(cmd)
+        stdout=subprocess.check_output(cmd,shell=True)
+        logging.info(stdout)
+
+if args.SSS == True:
+    #logging.info("Call function: --pbsv\n")
+    #pbsv_minimap2_loop()
+    #pbsv_discover()
+    #logging.info("pbsv for {} finsihed!".format(par['pj_name']))
+    pbsv_callSV()
+    subprocess.call("mkdir XXX",shell=True)
+    print('XXX')
