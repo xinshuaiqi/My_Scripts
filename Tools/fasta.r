@@ -24,6 +24,7 @@ rename fastq seq name
 ## 将所有的蛋白序列重新编号成1,2,3,4， rename fasta sequence
 awk '/^>/{print ">" ++i; next}{print}' < brassicaceae7spp >brassicaceae7spp
 
-
+# extract a fastaa seq
+awk -v seq="sequence2" -v RS='>' '$1 == seq {print RS $0}' file
 
 
