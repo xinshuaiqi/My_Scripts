@@ -146,18 +146,29 @@ touch zmays{A,C}_R{1,2}-temp.fastq
 find . -name "*-temp.fastq" | xargs rm
 find . -name "samples [AB].txt" -print0 | xargs -0 rm
 
+find . -name "*.fastq" | xargs basename -s ".fastq" | \
+xargs -P 6 -I{} fastq_stat --in {}.fastq --out ../summaries/{}.txt
 
+#
+Create Bash script containing the commands
+to process a single sample, and have xargs run this script in
+many parallel Bash processes. For example:
 
+#!/bin/bash
+set -e
+set -u
+set -o pipefail
+sample_name=$(basename -s ".fastq" "$1")
+some_program ${sample_name}.fastq | another_program >
+${sample_name}-results.txt
 
+find . -name "*.fastq" | xargs -n 1 -P 4 bash script.sh
+-n 1 forces xargs to process one input argument at a time
+how many processes
+to run with -P.
 
-
-
-
-
-
-
-
-
+# GNU parallel 
+find . -name "*.fastq" | parallel --max-procs=6 'program {/.} > {/.}-out.txt'
 
 
 
