@@ -1,3 +1,7 @@
+# basic shell scripting for bioinformatics
+# note from *Bioinformatics Data Skills, chapter 12 *
+
+
 #!/bin/bash
 set -e            # terminating the script if any command exited with a nonzero exit status.
 set -u            # aborting the script if a variable’s value is unset.
@@ -169,6 +173,49 @@ to run with -P.
 
 # GNU parallel 
 find . -name "*.fastq" | parallel --max-procs=6 'program {/.} > {/.}-out.txt'
+
+
+
+### Make
+very powerful tool used to create bioinformatics pipelines.
+makefiles are constructed as a set of rules,
+each rule has three parts: the target, the prerequisites, and the recipe.
+
+only generates targets when they don’t
+exist or when their prerequisites have been modified.
+
+
+
+
+## BGZF and Tabix
+Blocked GNU Zip Format
+while gzip compresses the entire file, BGZF files are compressed in blocks.
+bgzip and tabix programs installed.
+These are both included with Samtools,
+
+# 1 create BGZF file
+zgrep "^#" Mus_musculus.GRCm38.75.gtf.gz; \
+zgrep -v "^#" Mus_musculus.GRCm38.75.gtf.gz | \
+sort -k1,1 -k4,4n) | bgzip > Mus_musculus.GRCm38.75.gtf.bgz
+
+# 2 tabix the bgz file
+tabix -p gff Mus_musculus.GRCm38.75.gtf.bgz
+
+# 3 query the data 
+tabix Mus_musculus.GRCm38.75.gtf.bgz 16:23146536-23158028 | head -n3
+
+
+# SQLite
+occasionally we do need to store and manipulate data that is best represented
+in many related tables
+
+
+
+
+
+
+
+
 
 
 
