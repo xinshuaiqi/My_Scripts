@@ -210,7 +210,64 @@ occasionally we do need to store and manipulate data that is best represented
 in many related tables
 
 
+sqlite3 gwascat.db
+.tables  #list tables in the database
+.schema  # (the SQL statement used to create a table)
+			# provides a list of all columns and their preferred type.
 
+SELECT * FROM gwascat;
+sqlite3 gwascat.db "SELECT * FROM gwascat" > results.txt
+SELECT * FROM gwascat LIMIT 2;
+SELECT trait, chrom, position, strongest_risk_snp, pvalue
+FROM gwascat ORDER BY author LIMIT 5;
+
+sqlite> SELECT chrom, position, strongest_risk_snp, pvalue
+...> FROM gwascat WHERE chrom = "22"
+...> AND position BETWEEN 24000000 AND 25000000
+...> AND pvalue IS NOT NULL ORDER BY pvalue LIMIT 5;
+
+
+
+#### Genomic Ranges
+bedtool
+GenomicRanges in R 
+
+
+# coordinate system convert
+• CrossMap is a command-line tool that converts many data formats (BED, GFF/
+GTF, SAM/BAM, Wiggle, VCF) between coordinate systems of different assembly
+versions.
+• NCBI Genome Remapping Service is a web-based tool supporting a variety of
+genomes and formats.
+• LiftOver is also a web-based tool for converting between genomes hosted on the
+UCSC Genome Browser’s site.
+
+• 0-based coordinate system, with half-closed, half-open intervals.
+• 1-based coordinate system, with closed intervals.
+
+
+Format/library Type
+BED 0-based
+GTF 1-based
+GFF 1-based
+SAM 1-based
+BAM 0-based
+VCF 1-based
+BCF 0-based
+Wiggle 1-based
+GenomicRanges 1-based
+BLAST 1-based
+GenBank/EMBL Feature Table 1-based
+
+
+Bioconductor is an open source software project
+that creates R bioinformatics packages
+
+biocLite() installs the correct version of a package for your R version (and its corresponding
+Bioconductor version).
+
+GenomicRanges package, which extends IRanges by handling biological
+details like chromosome name and strand
 
 
 
