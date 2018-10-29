@@ -214,8 +214,9 @@ samtools view -F 6 NA12891_CEU_sample.bam | wc -
 samtools view -F 7 NA12891_CEU_sample.bam | wc -l
 samtools view -F 6 -f 1 NA12891_CEU_sample.bam | wc -l
 
-
-
+# samtools mpileup call SNP
+samtools mpileup --no-BAQ --region 1:215906528-215906567 \
+--fasta-ref human_g1k_v37.fasta NA12891_CEU_sample.bam
 
 
 
