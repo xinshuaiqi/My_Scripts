@@ -5,8 +5,8 @@ process txt files with multiple header lines
 
 ref https://stackoverflow.com/questions/32615039/how-to-parse-text-file-with-multiple-sections-of-headers-in-r
 
-setwd("/efs/home/qi_evrpa/canola65037/TRF/")
-setwd("C:/Users/evrpa/Desktop/TRF")
+setwd("XX/")
+
 f<- readLines("XXX.dat")
 head(f)
 headers = which(grepl("^Sequence:", f))
